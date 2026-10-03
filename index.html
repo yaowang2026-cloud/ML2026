@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DayOne Midwife</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+  <!-- HEADER -->
+  <header>
+    <div class="avatar">D1</div>
+
+    <div>
+      <strong>DayOne</strong>
+      <small>Assistant maternité</small>
+    </div>
+
+    <button id="networkBtn" class="online">
+      ● En ligne
+    </button>
+  </header>
+
+
+  <!-- CHAT -->
+  <main id="chat">
+
+    <div class="message bot">
+      Bonjour 👋<br><br>
+      Je peux numériser une nouvelle visite à partir du carnet papier.
+    </div>
+
+    <div class="message bot">
+      Que souhaitez-vous faire ?
+    </div>
+
+    <div class="actions">
+      <button onclick="startVisit()">📷 Nouvelle visite</button>
+      <button>🔎 Retrouver une patiente</button>
+    </div>
+
+  </main>
+
+
+  <!-- Hidden camera/file input -->
+  <input
+    id="cameraInput"
+    type="file"
+    accept="image/*"
+    capture="environment"
+    hidden
+  >
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
