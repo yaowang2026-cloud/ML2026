@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>DayOne Midwife</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+
+<body>
+
+<div class="phone">
+
+  <!-- ========================================= -->
+  <!-- HEADER -->
+  <!-- ========================================= -->
+
+  <header>
+
+    <div class="avatar">
+      D1
+    </div>
+
+    <div class="header-info">
+      <strong>DayOne</strong>
+      <small>Assistant maternité</small>
+    </div>
+
+    <button id="datasetBtn" type="button">Données</button>
+    <button id="languageBtn" type="button" aria-label="Switch to English">EN</button>
+
+    <button
+      id="networkBtn"
+      class="online"
+      type="button"
+    >
+      ● En ligne
+    </button>
+
+  </header>
+
+
+  <!-- ========================================= -->
+  <!-- CHAT -->
+  <!-- ========================================= -->
+
+  <main id="chat">
+
+    <div class="message bot">
+
+      Bonjour 👋
+
+      <br><br>
+
+      Je peux numériser une nouvelle visite
+      à partir du carnet papier.
+
+    </div>
+
+
+    <div class="message bot">
+
+      Que souhaitez-vous faire ?
+
+    </div>
+
+
+    <div class="actions">
+
+      <button
+        type="button"
+        onclick="startVisit()"
+      >
+        📷 Nouvelle visite
+      </button>
+
+
+      <button
+        type="button"
+        onclick="findPatient()"
+      >
+        🔎 Retrouver une patiente
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <!-- ========================================= -->
+  <!-- MESSAGE BAR -->
+  <!-- ========================================= -->
+
+  <nav id="photoActions" class="photo-actions" aria-label="Photo actions"></nav>
+
+  <div class="message-bar">
+
+    <button
+      id="attachBtn"
+      class="attach-btn"
+      type="button"
+      title="Ajouter une photo"
+    >
+      ＋
+    </button>
+
+
+    <input
+      id="messageInput"
+      type="text"
+      placeholder="Écrire un message..."
+      autocomplete="off"
+    >
+
+
+    <button
+      id="sendBtn"
+      class="send-btn"
+      type="button"
+    >
+      ➤
+    </button>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- HIDDEN CAMERA / FILE INPUT -->
+  <!-- ========================================= -->
+
+  <!-- Opens the phone camera -->
+<input
+    id="cameraInput"
+    type="file"
+    accept="image/*"
+    capture="environment"
+    hidden
+>
+
+<input
+    id="galleryInput"
+    type="file"
+    accept="image/*"
+    multiple
+    hidden
+>
+
+</div>
+
+
+<!-- ========================================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================================= -->
+
+<dialog id="datasetDialog" aria-labelledby="datasetTitle">
+  <div class="dataset-heading"><h2 id="datasetTitle"></h2><button id="datasetClose" type="button"></button></div>
+  <div class="dataset-controls">
+    <select id="datasetStatus" aria-label="Dataset status"><option value="saved"></option><option value="draft"></option></select>
+    <button id="datasetRefresh" type="button"></button>
+    <a id="datasetDownload" href="/api/dataset.csv" download="registry.csv"></a>
+  </div>
+  <p id="datasetInfo" role="status"></p>
+  <div id="datasetTable" class="dataset-table" tabindex="0"></div>
+  <div class="dataset-controls"><button id="datasetPrev" type="button"></button><button id="datasetNext" type="button"></button></div>
+</dialog>
+<script src="app.js"></script>
+
+</body>
+
+</html>
