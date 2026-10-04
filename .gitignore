@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Uploaded images
+work/uploads/
+
+# Dataset / challenge data
+work/data/
+
+# EasyOCR models
+.EasyOCR/

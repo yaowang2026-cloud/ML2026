@@ -4,32 +4,29 @@ const networkBtn = document.getElementById("networkBtn");
 
 let online = true;
 let currentImage = null;
+let currentExtraction = null;
 
 
-// ----------------------
+// ============================================================
 // HELPERS
-// ----------------------
+// ============================================================
 
 function addMessage(html, type = "bot") {
-
   const message = document.createElement("div");
 
   message.className = `message ${type}`;
   message.innerHTML = html;
 
   chat.appendChild(message);
-
   chat.scrollTop = chat.scrollHeight;
 }
 
 
 function addActions(buttons) {
-
   const actions = document.createElement("div");
   actions.className = "actions";
 
   buttons.forEach(button => {
-
     const btn = document.createElement("button");
 
     btn.innerHTML = button.label;
@@ -39,17 +36,15 @@ function addActions(buttons) {
   });
 
   chat.appendChild(actions);
-
   chat.scrollTop = chat.scrollHeight;
 }
 
 
-// ----------------------
+// ============================================================
 // START VISIT
-// ----------------------
+// ============================================================
 
 function startVisit() {
-
   addMessage("📷 Nouvelle visite", "user");
 
   addMessage(`
@@ -65,7 +60,6 @@ function startVisit() {
       label: "📷 Prendre une photo",
       action: () => cameraInput.click()
     },
-
     {
       label: "🖼️ Choisir une photo",
       action: () => cameraInput.click()
@@ -74,12 +68,11 @@ function startVisit() {
 }
 
 
-// ----------------------
+// ============================================================
 // RECEIVE PHOTO
-// ----------------------
+// ============================================================
 
-cameraInput.addEventListener("change", function(event) {
-
+cameraInput.addEventListener("change", function (event) {
   const file = event.target.files[0];
 
   if (!file) return;
@@ -92,145 +85,249 @@ cameraInput.addEventListener("change", function(event) {
     <img class="preview" src="${imageURL}">
   `, "user");
 
-  addMessage(`
-    🔍 Vérification de la qualité de l'image...
-  `);
+  addMessage("🔍 Vérification de l'image...");
 
-  setTimeout(() => {
-
+  if (online) {
+    processImage();
+  } else {
     addMessage(`
-      ✅ Page détectée<br>
-      ✅ Image lisible<br>
-      🔒 Photo enregistrée localement
-    `);
+      📴 Vous êtes hors ligne.<br><br>
 
-    if (online) {
+      La photo est conservée sur cet appareil.<br><br>
 
-      processImage();
-
-    } else {
-
-      addMessage(`
-        📴 Vous êtes hors ligne.<br><br>
-
-        La photo est enregistrée de façon sécurisée
-        sur cet appareil.<br><br>
-
-        🟠 <strong>EN ATTENTE DE TRAITEMENT IA</strong>
-      `, "system");
-
-    }
-
-  }, 1000);
-
+      🟠 <strong>PENDING_AI</strong><br>
+      Traitement dès le retour de la connexion.
+    `, "system");
+  }
 });
 
 
-// ----------------------
-// MOCK AI
-// ----------------------
+// ============================================================
+// REAL AI EXTRACTION
+// ============================================================
 
-function processImage() {
+async function processImage() {
+  if (!currentImage) {
+    addMessage("❌ Aucune image sélectionnée.", "system");
+    return;
+  }
 
   addMessage(`
     🤖 Analyse du registre en cours...
   `);
 
-  setTimeout(showResults, 1500);
-}
+  try {
+    const formData = new FormData();
 
+    formData.append("image", currentImage);
 
-function showResults() {
+    // TEMPORARY:
+    // We use page type 4 for our first end-to-end test.
+    formData.append("page_type", "4");
 
-  addMessage(`
-    <strong>Extraction terminée ✓</strong><br><br>
+    const response = await fetch("/api/extract", {
+      method: "POST",
+      body: formData
+    });
 
-    <div class="field">
-      ✅ Âge : <strong>31 ans</strong><br>
-      Confiance : 98%
-    </div>
+    const data = await response.json();
 
-    <div class="field">
-      ✅ Grossesse désirée : <strong>Oui</strong><br>
-      Confiance : 96%
-    </div>
-
-    <div class="field">
-      ✅ Tension : <strong>110/70 mmHg</strong><br>
-      Confiance : 94%
-    </div>
-
-    <div class="field warning">
-      ⚠️ Poids : <strong>63 kg ?</strong><br>
-      Confiance : 61%<br>
-      Statut : À RÉVISER
-    </div>
-  `);
-
-  addMessage(`
-    J'ai un doute sur <strong>1 champ</strong>.<br><br>
-
-    J'ai lu le poids comme <strong>63 kg</strong>.<br>
-    Est-ce correct ?
-  `);
-
-  addActions([
-    {
-      label: "✅ Oui, confirmer",
-      action: confirmWeight
-    },
-
-    {
-      label: "✏️ Corriger",
-      action: correctWeight
-    },
-
-    {
-      label: "📷 Reprendre la photo",
-      action: () => cameraInput.click()
+    if (!response.ok) {
+      throw new Error(
+        data.error || "Erreur pendant l'extraction."
+      );
     }
-  ]);
+
+    currentExtraction = data;
+
+    showResults(data);
+
+  } catch (error) {
+    console.error(error);
+
+    addMessage(`
+      ❌ <strong>Erreur pendant l'analyse.</strong><br><br>
+      ${error.message}
+    `, "system");
+  }
 }
 
 
-// ----------------------
-// REVIEW
-// ----------------------
+// ============================================================
+// SHOW EXTRACTION RESULTS
+// ============================================================
 
-function confirmWeight() {
+function showResults(extraction) {
+  if (!extraction.fields || extraction.fields.length === 0) {
+    addMessage(`
+      ⚠️ Aucun champ n'a été extrait.
+    `);
 
-  addMessage("✅ Oui, 63 kg", "user");
+    return;
+  }
+
+  let resultsHTML = `
+    <strong>Extraction terminée ✓</strong><br><br>
+  `;
+
+  extraction.fields.forEach(field => {
+    const confidence =
+      Math.round((field.confidence || 0) * 100);
+
+    let icon = "✅";
+    let cssClass = "field";
+
+    if (field.status === "NEEDS_REVIEW") {
+      icon = "⚠️";
+      cssClass = "field warning";
+    }
+
+    if (field.status === "ILLEGIBLE") {
+      icon = "❓";
+      cssClass = "field warning";
+    }
+
+    if (field.status === "NOT_PROVIDED") {
+      icon = "➖";
+    }
+
+    resultsHTML += `
+      <div class="${cssClass}">
+        ${icon}
+        <strong>${field.label}</strong> :
+        ${field.value || "Non fourni"}
+        <br>
+
+        Confiance : ${confidence}%
+        <br>
+
+        Statut : ${field.status}
+      </div>
+    `;
+  });
+
+  addMessage(resultsHTML);
+
+  reviewNextField();
+}
+
+
+// ============================================================
+// REVIEW UNCERTAIN FIELDS
+// ============================================================
+
+function reviewNextField() {
+  if (!currentExtraction) return;
+
+  const field = currentExtraction.fields.find(
+    field =>
+      field.status === "NEEDS_REVIEW" ||
+      field.status === "ILLEGIBLE"
+  );
+
+  if (!field) {
+    addMessage(`
+      ✅ Toutes les informations ont été vérifiées.
+    `);
+
+    patientMatch();
+    return;
+  }
+
+  if (field.status === "NEEDS_REVIEW") {
+    addMessage(`
+      ⚠️ J'ai un doute sur
+      <strong>${field.label}</strong>.<br><br>
+
+      J'ai lu :
+      <strong>${field.value || "Aucune valeur"}</strong>.<br><br>
+
+      Est-ce correct ?
+    `);
+
+    addActions([
+      {
+        label: "✅ Confirmer",
+        action: () => confirmField(field)
+      },
+      {
+        label: "✏️ Modifier",
+        action: () => editField(field)
+      },
+      {
+        label: "📷 Reprendre",
+        action: () => cameraInput.click()
+      }
+    ]);
+
+    return;
+  }
+
+  if (field.status === "ILLEGIBLE") {
+    addMessage(`
+      ❓ Je n'arrive pas à lire
+      <strong>${field.label}</strong>.<br><br>
+
+      Que souhaitez-vous faire ?
+    `);
+
+    addActions([
+      {
+        label: "✏️ Saisir manuellement",
+        action: () => editField(field)
+      },
+      {
+        label: "📷 Reprendre la photo",
+        action: () => cameraInput.click()
+      }
+    ]);
+  }
+}
+
+
+// ============================================================
+// CONFIRM / EDIT
+// ============================================================
+
+function confirmField(field) {
+  field.status = "KNOWN";
+  field.confidence = 1;
 
   addMessage(`
-    Parfait. Toutes les informations ont été vérifiées. ✅
-  `);
+    ✅ ${field.label} : ${field.value}
+  `, "user");
 
-  patientMatch();
+  reviewNextField();
 }
 
 
-function correctWeight() {
+function editField(field) {
+  const newValue = prompt(
+    `Entrez la valeur pour ${field.label} :`,
+    field.value || ""
+  );
 
-  const value = prompt("Entrez le poids corrigé :");
+  if (newValue === null || newValue.trim() === "") {
+    return;
+  }
 
-  if (!value) return;
-
-  addMessage(`✏️ ${value} kg`, "user");
+  field.value = newValue.trim();
+  field.status = "KNOWN";
+  field.confidence = 1;
 
   addMessage(`
-    Poids corrigé : <strong>${value} kg</strong> ✅
-  `);
+    ✏️ ${field.label} : ${field.value}
+  `, "user");
 
-  patientMatch();
+  reviewNextField();
 }
 
 
-// ----------------------
+// ============================================================
 // PATIENT MATCHING
-// ----------------------
+// ============================================================
 
 function patientMatch() {
-
   addMessage(`
     🔗 Entrez le code de la patiente inscrit sur le registre.
   `);
@@ -245,7 +342,6 @@ function patientMatch() {
 
 
 function showPatient() {
-
   addMessage("A7K4", "user");
 
   addMessage(`
@@ -262,23 +358,23 @@ function showPatient() {
       label: "✅ Même patiente",
       action: saveRecord
     },
-
     {
-      label: "➕ Créer un nouveau dossier",
+      label: "➕ Nouveau dossier",
       action: saveRecord
     },
-
     {
       label: "❓ Je ne sais pas",
-      action: () =>
-        addMessage("Le dossier a été marqué pour révision.")
+      action: () => {
+        addMessage(`
+          ⚠️ Le dossier a été marqué pour révision.
+        `);
+      }
     }
   ]);
 }
 
 
 function saveRecord() {
-
   addMessage(`
     ✅ <strong>Dossier enregistré</strong><br><br>
 
@@ -289,16 +385,34 @@ function saveRecord() {
 }
 
 
-// ----------------------
+// ============================================================
+// FIND PATIENT
+// ============================================================
+
+function findPatient() {
+  addMessage("🔎 Retrouver une patiente", "user");
+
+  addMessage(`
+    Entrez le code anonyme attribué à la patiente.
+  `);
+
+  addActions([
+    {
+      label: "Demo : A7K4",
+      action: showPatient
+    }
+  ]);
+}
+
+
+// ============================================================
 // ONLINE / OFFLINE
-// ----------------------
+// ============================================================
 
-networkBtn.addEventListener("click", function() {
-
+networkBtn.addEventListener("click", function () {
   online = !online;
 
   if (online) {
-
     networkBtn.innerHTML = "● En ligne";
     networkBtn.className = "online";
 
@@ -312,7 +426,6 @@ networkBtn.addEventListener("click", function() {
     }
 
   } else {
-
     networkBtn.innerHTML = "● Hors ligne";
     networkBtn.className = "offline";
 
@@ -321,3 +434,86 @@ networkBtn.addEventListener("click", function() {
     `, "system");
   }
 });
+
+// ============================================================
+// MESSAGE BAR
+// ============================================================
+
+const messageInput =
+  document.getElementById("messageInput");
+
+const sendBtn =
+  document.getElementById("sendBtn");
+
+const attachBtn =
+  document.getElementById("attachBtn");
+
+
+function sendMessage() {
+
+  const text = messageInput.value.trim();
+
+  if (!text) return;
+
+  addMessage(text, "user");
+
+  messageInput.value = "";
+
+  // Simple conversational commands
+  const lowerText = text.toLowerCase();
+
+  if (
+    lowerText.includes("nouvelle") ||
+    lowerText.includes("visite") ||
+    lowerText.includes("photo")
+  ) {
+
+    startVisit();
+    return;
+  }
+
+  if (
+    lowerText.includes("patiente") ||
+    lowerText.includes("patient") ||
+    lowerText.includes("retrouver")
+  ) {
+
+    findPatient();
+    return;
+  }
+
+  addMessage(`
+    Je peux vous aider à :<br><br>
+
+    📷 Numériser une nouvelle visite<br>
+    🔎 Retrouver une patiente
+  `);
+}
+
+
+sendBtn.addEventListener(
+  "click",
+  sendMessage
+);
+
+
+messageInput.addEventListener(
+  "keydown",
+  function(event) {
+
+    if (event.key === "Enter") {
+      sendMessage();
+    }
+
+  }
+);
+
+
+attachBtn.addEventListener(
+  "click",
+  function() {
+
+    cameraInput.click();
+
+  }
+);

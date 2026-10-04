@@ -162,3 +162,68 @@ main {
 .warning {
   background: #fff3cd;
 }
+
+/* =========================================
+   MESSAGE BAR
+========================================= */
+
+.message-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px;
+
+  background: #f5f1eb;
+  border-top: 1px solid #ddd;
+}
+
+
+.message-bar input {
+  flex: 1;
+
+  padding: 12px 16px;
+
+  border: 1px solid #ddd;
+  border-radius: 24px;
+
+  font-size: 16px;
+  outline: none;
+
+  background: white;
+}
+
+
+.message-bar input:focus {
+  border-color: #087f6b;
+}
+
+
+.attach-btn,
+.send-btn {
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.attach-btn {
+  background: white;
+  color: #087f6b;
+}
+
+
+.send-btn {
+  background: #087f6b;
+  color: white;
+}

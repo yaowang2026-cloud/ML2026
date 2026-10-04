@@ -1,54 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>DayOne Midwife</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 </head>
+
 
 <body>
 
 <div class="phone">
 
+  <!-- ========================================= -->
   <!-- HEADER -->
-  <header>
-    <div class="avatar">D1</div>
+  <!-- ========================================= -->
 
-    <div>
+  <header>
+
+    <div class="avatar">
+      D1
+    </div>
+
+    <div class="header-info">
       <strong>DayOne</strong>
       <small>Assistant maternité</small>
     </div>
 
-    <button id="networkBtn" class="online">
+    <button
+      id="networkBtn"
+      class="online"
+      type="button"
+    >
       ● En ligne
     </button>
+
   </header>
 
 
+  <!-- ========================================= -->
   <!-- CHAT -->
+  <!-- ========================================= -->
+
   <main id="chat">
 
     <div class="message bot">
-      Bonjour 👋<br><br>
-      Je peux numériser une nouvelle visite à partir du carnet papier.
+
+      Bonjour 👋
+
+      <br><br>
+
+      Je peux numériser une nouvelle visite
+      à partir du carnet papier.
+
     </div>
+
 
     <div class="message bot">
+
       Que souhaitez-vous faire ?
+
     </div>
 
+
     <div class="actions">
-      <button onclick="startVisit()">📷 Nouvelle visite</button>
-      <button>🔎 Retrouver une patiente</button>
+
+      <button
+        type="button"
+        onclick="startVisit()"
+      >
+        📷 Nouvelle visite
+      </button>
+
+
+      <button
+        type="button"
+        onclick="findPatient()"
+      >
+        🔎 Retrouver une patiente
+      </button>
+
     </div>
 
   </main>
 
 
-  <!-- Hidden camera/file input -->
+  <!-- ========================================= -->
+  <!-- MESSAGE BAR -->
+  <!-- ========================================= -->
+
+  <div class="message-bar">
+
+    <button
+      id="attachBtn"
+      class="attach-btn"
+      type="button"
+      title="Ajouter une photo"
+    >
+      ＋
+    </button>
+
+
+    <input
+      id="messageInput"
+      type="text"
+      placeholder="Écrire un message..."
+      autocomplete="off"
+    >
+
+
+    <button
+      id="sendBtn"
+      class="send-btn"
+      type="button"
+    >
+      ➤
+    </button>
+
+  </div>
+
+
+  <!-- ========================================= -->
+  <!-- HIDDEN CAMERA / FILE INPUT -->
+  <!-- ========================================= -->
+
   <input
     id="cameraInput"
     type="file"
@@ -59,7 +144,13 @@
 
 </div>
 
+
+<!-- ========================================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================================= -->
+
 <script src="app.js"></script>
 
 </body>
+
 </html>
