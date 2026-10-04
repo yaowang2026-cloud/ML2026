@@ -1,6 +1,6 @@
 // Application language only; source evidence and user-entered data stay unchanged.
 let language = localStorage.getItem('dayone-language') === 'en' ? 'en' : 'fr';
-const english = {"Assistant maternité": "Maternity assistant", "● En ligne": "● Online", "● Backend connecté": "● Backend connected", "● Backend indisponible": "● Backend unavailable", "Écrire un message...": "Type a message...", "Ajouter une photo": "Add a photo", "Traitement en cours… veuillez patienter": "Processing… please wait", "Nouvelle visite : ajoutez toutes les photos d’un même dossier, dans l’ordre.": "New visit: add all photos for one record, in page order.", "Prendre une photo": "Take a photo", "Choisir des images": "Choose images", "Analyser les pages": "Analyze pages", "Nouvelle visite": "New visit", "Envoi désactivé jusqu’à la fin du traitement.": "Sending is disabled until processing finishes.", "Veuillez patienter…": "Please wait…", "Analyse terminée. Vérifiez les résultats ci-dessous.": "Analysis complete. Review the results below.", "Analyse terminée. Les champs sont prêts à être vérifiés.": "Analysis complete. The fields are ready for review.", "Extraction des 31 champs à partir du texte…": "Extracting the 31 fields from the text…", "Vérification des valeurs et classement : acceptés / à vérifier / manquants…": "Validating values and grouping fields: accepted / review / missing…", "Acceptés": "Accepted", "À vérifier": "Review", "Manquants": "Missing", "Vérifié": "Verified", "Réponse requise": "Response required", "Valeur": "Value", "Preuve": "Evidence", "Votre correction (texte ou valeur)": "Your correction (text or value)", "Confirmer": "Confirm", "Interpréter ma correction": "Interpret my correction", "Laisser vide": "Leave blank", "Confirmer le dossier et enregistrer le CSV": "Confirm record and save CSV", "Correction interprétée. Confirmez la valeur proposée.": "Correction interpreted. Confirm the proposed value.", "Champ mis à jour.": "Field updated.", "Enregistrement du dossier dans le CSV…": "Saving the record to CSV…", "Dossier enregistré dans le CSV.": "Record saved to CSV.", "Dossier enregistré dans registry.csv.": "Record saved to registry.csv.", "Chargement du dossier…": "Loading record…", "Dossier chargé.": "Record loaded.", "Commencez une nouvelle visite pour analyser d’autres photos.": "Start a new visit to analyze more photos.", "Ajoutez au moins une photo.": "Add at least one photo.", "Commencer une nouvelle visite ? Le dossier actuel reste conservé sur le serveur.": "Start a new visit? The current record remains stored on the server.", "Saisissez votre réponse dans le champ concerné, puis choisissez « Interpréter ma correction ».": "Enter your response in the relevant field, then choose “Interpret my correction”.", "La recherche par patiente n’est pas encore connectée. Le dossier en cours est restauré lors du rechargement de cette page.": "Patient search is not connected yet. Reloading this page restores the current record.", "Saisissez une valeur valide ou choisissez « Laisser vide ».": "Enter a valid value or choose “Leave blank”.", "Confirmez la valeur interprétée.": "Confirm the interpreted value.", "Valeur ou preuve à vérifier.": "Value or evidence needs review.", "Une réponse de 1 à 4000 caractères est requise.": "A response of 1 to 4000 characters is required.", "Dossier introuvable.": "Record not found.", "Le traitement a échoué. Vérifiez Ollama et réessayez. Aucun succès de sauvegarde confirmé.": "Processing failed. Check Ollama and retry. Saving has not been confirmed.", "Dossier enregistré ou modifié. Rechargez le dossier.": "Record saved or changed. Reload the record.", "Le dossier a changé. Rechargez-le.": "The record changed. Reload it.", "Confirmez, corrigez ou laissez explicitement vide chaque champ à vérifier/manquant.": "Confirm, correct or explicitly leave blank every review/missing field."};
+const english = {"Assistant maternité": "Maternity assistant", "● En ligne": "● Online", "● Backend connecté": "● Backend connected", "● Backend indisponible": "● Backend unavailable", "Écrire un message...": "Type a message...", "Ajouter une photo": "Add a photo", "Traitement en cours… veuillez patienter": "Processing… please wait", "Nouvelle visite : ajoutez toutes les photos d’un même dossier.": "New visit: add all photos for one record.", "Prendre une photo": "Take a photo", "Choisir des images": "Choose images", "Analyser les pages": "Analyze pages", "Nouvelle visite": "New visit", "Envoi désactivé jusqu’à la fin du traitement.": "Sending is disabled until processing finishes.", "Veuillez patienter…": "Please wait…", "Analyse terminée. Vérifiez les résultats ci-dessous.": "Analysis complete. Review the results below.", "Analyse terminée. Les champs sont prêts à être vérifiés.": "Analysis complete. The fields are ready for review.", "Extraction des 31 champs à partir du texte…": "Extracting the 31 fields from the text…", "Vérification des valeurs et classement : acceptés / à vérifier / manquants…": "Validating values and grouping fields: accepted / review / missing…", "Acceptés": "Accepted", "À vérifier": "Review", "Manquants": "Missing", "Vérifié": "Verified", "Réponse requise": "Response required", "Valeur": "Value", "Preuve": "Evidence", "Votre correction (texte ou valeur)": "Your correction (text or value)", "Confirmer": "Confirm", "Interpréter ma correction": "Interpret my correction", "Laisser vide": "Leave blank", "Confirmer le dossier et enregistrer le CSV": "Confirm record and save CSV", "Correction interprétée. Confirmez la valeur proposée.": "Correction interpreted. Confirm the proposed value.", "Champ mis à jour.": "Field updated.", "Enregistrement du dossier dans le CSV…": "Saving the record to CSV…", "Dossier enregistré dans le CSV.": "Record saved to CSV.", "Dossier enregistré dans registry.csv.": "Record saved to registry.csv.", "Chargement du dossier…": "Loading record…", "Dossier chargé.": "Record loaded.", "Commencez une nouvelle visite pour analyser d’autres photos.": "Start a new visit to analyze more photos.", "Ajoutez au moins une photo.": "Add at least one photo.", "Commencer une nouvelle visite ? Le dossier actuel reste conservé sur le serveur.": "Start a new visit? The current record remains stored on the server.", "Saisissez votre réponse dans le champ concerné, puis choisissez « Interpréter ma correction ».": "Enter your response in the relevant field, then choose “Interpret my correction”.", "La recherche par patiente n’est pas encore connectée. Le dossier en cours est restauré lors du rechargement de cette page.": "Patient search is not connected yet. Reloading this page restores the current record.", "Saisissez une valeur valide ou choisissez « Laisser vide ».": "Enter a valid value or choose “Leave blank”.", "Confirmez la valeur interprétée.": "Confirm the interpreted value.", "Valeur ou preuve à vérifier.": "Value or evidence needs review.", "Une réponse de 1 à 4000 caractères est requise.": "A response of 1 to 4000 characters is required.", "Dossier introuvable.": "Record not found.", "Le traitement a échoué. Vérifiez Ollama et réessayez. Aucun succès de sauvegarde confirmé.": "Processing failed. Check Ollama and retry. Saving has not been confirmed.", "Dossier enregistré ou modifié. Rechargez le dossier.": "Record saved or changed. Reload the record.", "Le dossier a changé. Rechargez-le.": "The record changed. Reload it.", "Confirmez, corrigez ou laissez explicitement vide chaque champ à vérifier/manquant.": "Confirm, correct or explicitly leave blank every review/missing field."};
 function tr(text) {
   if (language !== 'en') return text;
   if (english[text]) return english[text];
@@ -34,6 +34,7 @@ function applyLanguage() {
     renderReview(activeField);
   }
   datasetLabels();
+  updateModelButton();
   setBusy(busy);
 }
 const chat = document.getElementById('chat');
@@ -148,8 +149,52 @@ function actions(items, parent = chat) {
   items.forEach(([label, action]) => button(label, action, node));
   parent.appendChild(node);
 }
+function patientIdentity(record) {
+  const id = record.fields.find(field => field.name === 'id');
+  const known = id?.value !== null && id?.value !== undefined && String(id.value).trim() !== '';
+  const label = known ? String(id.value) : (language === 'en' ? 'ID missing' : 'Identifiant manquant');
+  const pending = known && !record.patient_id_confirmed ? (language === 'en' ? ' (unconfirmed)' : ' (à confirmer)') : '';
+  return `${language === 'en' ? 'Patient' : 'Patiente'}: ${label}${pending}`;
+}
+function patientRecordDetail(record) {
+  return `${language === 'en' ? 'Record' : 'Dossier'}: ${record.record_id} · ${record.page_count ?? 0} ${language === 'en' ? 'page(s)' : 'page(s)'}`;
+}
+function patientHeading(record) {
+  const heading = document.createElement('div'); heading.className = 'patient-heading';
+  const title = document.createElement('strong'); title.textContent = patientIdentity(record);
+  const detail = document.createElement('small'); detail.textContent = patientRecordDetail(record);
+  heading.append(title, detail);
+  return heading;
+}
+function updatePatientContext() {
+  const banner = document.getElementById('activePatient');
+  banner.hidden = false;
+  banner.replaceChildren();
+  if (currentExtraction) {
+    const label = document.createElement('span');
+    label.textContent = language === 'en'
+      ? (currentExtraction.saved ? 'Viewing saved patient' : 'Currently editing')
+      : (currentExtraction.saved ? 'Patiente enregistrée' : 'Modification en cours');
+    banner.append(label, patientHeading(currentExtraction));
+  } else {
+    banner.textContent = language === 'en'
+      ? 'New patient batch — add photos for one patient. Identity will appear after analysis.'
+      : 'Nouveau lot patiente — ajoutez les photos d’une seule patiente. Son identité apparaîtra après l’analyse.';
+  }
+  // Retained chat results are separate, labelled, read-only patient groups.
+  chat.querySelectorAll('.review-panel').forEach(panel => {
+    if (!panel.patientRecord) return;
+    const old = panel.querySelector('.patient-heading');
+    if (old) old.replaceWith(patientHeading(panel.patientRecord));
+    const status = panel.querySelector('.patient-panel-status');
+    if (status) status.textContent = panel === reviewPanel
+      ? (language === 'en' ? 'Current patient record' : 'Dossier patiente actuel')
+      : (language === 'en' ? 'Previous patient record · read only' : 'Dossier patiente précédent · lecture seule');
+  });
+}
 function setBusy(value) {
   busy = value;
+  updatePatientContext();
   const analyze = document.getElementById('analyzeBatchBtn');
   if (analyze) analyze.dataset.locked = String(!currentImages.length || Boolean(currentExtraction));
   document.querySelectorAll('button, input').forEach(node => { node.disabled = node.dataset.undoAction === 'true' ? false : (pendingFieldAction ? true : !['languageBtn', 'datasetBtn', 'datasetClose', 'datasetRefresh', 'datasetPrev', 'datasetNext'].includes(node.id) && (value || node.dataset.locked === 'true')); });
@@ -173,7 +218,7 @@ function startVisit() {
   dismissedFields.clear();
   currentImages = []; currentExtraction = null;
   sessionStorage.removeItem('record_id'); chat.replaceChildren(); reviewPanel = null;
-  addMessage('Nouvelle visite : ajoutez toutes les photos d’un même dossier, dans l’ordre.');
+  addMessage('Nouvelle visite : ajoutez toutes les photos d’un même dossier.');
   setBusy(false);
 }
 function receive(input) {
@@ -213,6 +258,7 @@ async function processImages() {
   const form = new FormData(); currentImages.forEach(file => form.append('images', file));
   const progressId = crypto.randomUUID();
   form.append('progress_id', progressId);
+  form.append('provider', selectedProvider);
   const stopProgress = watchProgress(progressId);
   let outcome = 'Analyse terminée. Vérifiez les résultats ci-dessous.', failed = false;
   try {
@@ -237,7 +283,7 @@ function renderReview(activeField = null) {
     const viewport = chat.getBoundingClientRect();
     const visible = card => {
       const rect = card.getBoundingClientRect();
-      return card.closest('details').open && rect.bottom > viewport.top && rect.top < viewport.bottom;
+      return (card.closest('details')?.open ?? true) && rect.bottom > viewport.top && rect.top < viewport.bottom;
     };
     const anchor = cards.find(card => card.dataset.field === activeField && visible(card)) || cards.find(visible);
     if (anchor) {
@@ -246,12 +292,38 @@ function renderReview(activeField = null) {
     }
   }
   reviewPanel = document.createElement('section'); reviewPanel.className = 'review-panel';
+  reviewPanel.dataset.recordId = currentExtraction.record_id;
+  reviewPanel.patientRecord = currentExtraction;
+  reviewPanel.setAttribute('aria-label', patientIdentity(currentExtraction) + ' · ' + patientRecordDetail(currentExtraction));
+  reviewPanel.appendChild(patientHeading(currentExtraction));
+  const patientStatus = document.createElement('small'); patientStatus.className = 'patient-panel-status';
+  reviewPanel.appendChild(patientStatus);
   const heading = document.createElement('h3'); uiText(heading, currentExtraction.message); reviewPanel.appendChild(heading);
-  for (const [group, title] of [['accepted', 'Acceptés'], ['review', 'À vérifier'], ['missing', 'Manquants']]) {
+  const idField = currentExtraction.fields.find(field => field.name === 'id');
+  const idRequired = !currentExtraction.patient_id_confirmed && !currentExtraction.saved;
+  if (idRequired) dismissedFields.delete('id');
+  const idCard = document.createElement('div'); idCard.className = 'field patient-id-first'; idCard.dataset.field = 'id';
+  const idTitle = document.createElement('strong');
+  idTitle.textContent = language === 'en' ? 'Patient ID · required first' : 'Identifiant patiente · obligatoire en premier';
+  const idValue = document.createElement('p');
+  idValue.textContent = `${idField?.value ?? '—'} · ${language === 'en' ? (idRequired ? 'Confirm the ID to unlock the other fields.' : 'Confirmed') : (idRequired ? 'Confirmez l’identifiant pour accéder aux autres champs.' : 'Confirmé')}`;
+  idCard.append(idTitle, idValue);
+  if (!currentExtraction.saved) {
+    const idInput = document.createElement('input'); idInput.type = 'text'; idInput.required = true;
+    idInput.value = drafts.get('id') ?? String(idField?.value ?? '');
+    idInput.setAttribute('aria-label', language === 'en' ? 'Required patient ID' : 'Identifiant patiente obligatoire');
+    idCard.appendChild(idInput); attachInputFeedback(idInput, 'id', false);
+    button(language === 'en' ? (idRequired ? 'Confirm patient ID' : 'Update patient ID') : (idRequired ? 'Confirmer l’identifiant' : 'Modifier l’identifiant'), () => {
+      if (!validateFieldInput(idInput, 'id')) { idInput.reportValidity(); return; }
+      review('id', 'manual', idInput.value.trim());
+    }, idCard);
+  }
+  reviewPanel.appendChild(idCard);
+  for (const [group, title] of (idRequired ? [] : [['accepted', 'Acceptés'], ['review', 'À vérifier'], ['missing', 'Manquants']])) {
     const details = document.createElement('details'); details.dataset.group = group; details.open = groupState.get(group) ?? (group !== 'accepted');
-    const summary = document.createElement('summary'); uiText(summary, `${title} (${currentExtraction[group].length})`); details.appendChild(summary);
+    const summary = document.createElement('summary'); uiText(summary, `${title} (${currentExtraction[group].filter(field => field.name !== 'id').length})`); details.appendChild(summary);
     for (const field of currentExtraction[group]) {
-      if (dismissedFields.has(field.name)) continue;
+      if (field.name === 'id' || dismissedFields.has(field.name)) continue;
       const card = document.createElement('div'); card.className = 'field'; card.dataset.field = field.name;
       if (field.name === anchorName) details.open = true;
       const name = document.createElement('strong'); name.textContent = field.label; card.appendChild(name);
@@ -272,6 +344,8 @@ function renderReview(activeField = null) {
             }],
             ['Laisser vide', () => review(field.name, 'missing')]
           ], card);
+        } else if (group === 'accepted') {
+          actions([[language === 'en' ? 'Modify' : 'Modifier', () => review(field.name, 'modify', input.value)]], card);
         } else {
           actions([
             ['Confirmer', () => review(field.name, 'confirm')],
@@ -334,6 +408,7 @@ function attachInputFeedback(input, name, allowBlank) {
 }
 function validateFieldInput(input, name, allowBlank = false) {
   const value = input.value.trim();
+  if (name === 'id') allowBlank = false;
   const rule = fieldInputRules[name];
   let error = '';
   if (!value) {
@@ -394,6 +469,7 @@ async function commitReview(field, action, response) {
       ? await api(`/api/records/${currentExtraction.record_id}/manual`, {revision: currentExtraction.revision, changes: {[field]: response}})
       : await api(`/api/records/${currentExtraction.record_id}/review`, {revision: currentExtraction.revision, field, action, response});
     renderReview(field);
+    if (currentExtraction.saved) outcome = 'Dossier enregistré dans le CSV.';
   } catch (error) {
     outcome = error.message; failed = true;
     dismissedFields.delete(field); renderReview(field);
@@ -517,6 +593,7 @@ async function deleteDatasetRecord(record) {
       currentExtraction = null; currentImages = []; dismissedFields.clear();
       reviewPanel?.remove(); reviewPanel = null;
       sessionStorage.removeItem('record_id');
+      updatePatientContext();
       addMessage(en ? 'This record was deleted. Start a new visit to continue.' : 'Ce dossier a été supprimé. Commencez une nouvelle visite pour continuer.', 'system');
     } else if (sessionStorage.getItem('record_id') === record.record_id) sessionStorage.removeItem('record_id');
     if (datasetSnapshot?.rows.length === 1 && datasetOffset > 0) datasetOffset = Math.max(0, datasetOffset - 100);
@@ -553,16 +630,19 @@ async function editDatasetRecord(recordId) {
     info.textContent = en
       ? 'Edit values directly (no AI). Changed fields are confirmed on Save. Tick Confirm for unchanged or blank fields you have checked. Other pending fields remain unresolved.'
       : 'Modifiez directement les valeurs (sans IA). Les champs modifiés sont confirmés à l’enregistrement. Cochez Confirmer pour les champs inchangés ou vides vérifiés. Les autres restent à vérifier.';
+    if (!record.patient_id_confirmed) info.textContent = en ? 'Confirm the required patient ID first. Save, then reopen Edit to update the other fields.' : 'Confirmez d’abord l’identifiant obligatoire. Enregistrez puis rouvrez Modifier pour les autres champs.';
+    area.appendChild(patientHeading(record));
     const form = document.createElement('form'); form.className = 'manual-editor'; form.noValidate = true;
     const controls = [];
     for (const field of record.fields) {
+      if (!record.patient_id_confirmed && field.name !== 'id') continue;
       const row = document.createElement('div'); row.className = 'manual-field';
       const label = document.createElement('label'); label.textContent = field.label;
       const input = document.createElement('input'); input.type = 'text'; input.value = field.value ?? '';
       input.setAttribute('aria-label', field.label); label.appendChild(input); row.appendChild(label);
       attachInputFeedback(input, field.name, true);
       const confirmLabel = document.createElement('label');
-      const checked = document.createElement('input'); checked.type = 'checkbox'; checked.checked = field.resolved;
+      const checked = document.createElement('input'); checked.type = 'checkbox'; checked.checked = field.name === 'id' ? Boolean(record.patient_id_confirmed) : field.resolved;
       confirmLabel.append(checked, document.createTextNode(en ? 'Confirm' : 'Confirmer'));
       row.appendChild(confirmLabel);
       const evidence = document.createElement('small'); evidence.textContent = field.evidence || (en ? 'No source evidence' : 'Aucune preuve source'); row.appendChild(evidence);
@@ -583,7 +663,7 @@ async function editDatasetRecord(recordId) {
       }
       const changes = {};
       for (const {field, input, checked, original} of controls) {
-        if (input.value !== original || (checked.checked && !field.resolved)) changes[field.name] = input.value;
+        if (input.value !== original || (checked.checked && (!field.resolved || (field.name === 'id' && !record.patient_id_confirmed)))) changes[field.name] = input.value;
       }
       if (!Object.keys(changes).length) { info.textContent = en ? 'No changes to save.' : 'Aucune modification à enregistrer.'; return; }
       manualSaving = true;
@@ -594,6 +674,7 @@ async function editDatasetRecord(recordId) {
         const updated = await api(`/api/records/${recordId}/manual`, {revision: record.revision, changes});
         if (currentExtraction?.record_id === recordId) { currentExtraction = updated; renderReview(); }
         exitManualEditor();
+        if (updated.saved) { document.getElementById('datasetStatus').value = 'saved'; datasetOffset = 0; }
         await loadDataset();
         info.textContent = (en ? 'Changes saved. ' : 'Modifications enregistrées. ') + info.textContent;
       } catch (error) {
@@ -624,6 +705,24 @@ document.getElementById('languageBtn').addEventListener('click', () => {
   language = language === 'fr' ? 'en' : 'fr';
   localStorage.setItem('dayone-language', language);
   applyLanguage();
+});
+// Provider changes apply only to the next batch; existing records retain their provider.
+let selectedProvider = localStorage.getItem('dayone-provider') === 'openai' ? 'openai' : 'local';
+function updateModelButton() {
+  const node = document.getElementById('modelBtn');
+  const online = selectedProvider === 'openai';
+  node.textContent = online ? 'OpenAI' : 'Local';
+  node.setAttribute('aria-pressed', String(online));
+  node.title = language === 'en'
+    ? 'Model for next batch: ' + (online ? 'OpenAI online — images and corrections are sent to OpenAI. Click for local.' : 'Local Ollama. Click for OpenAI online.')
+    : 'Modèle du prochain lot : ' + (online ? 'OpenAI en ligne — images et corrections envoyées à OpenAI. Cliquez pour local.' : 'Ollama local. Cliquez pour OpenAI en ligne.');
+  node.setAttribute('aria-label', node.title);
+}
+document.getElementById('modelBtn').addEventListener('click', () => {
+  if (busy) return;
+  selectedProvider = selectedProvider === 'local' ? 'openai' : 'local';
+  localStorage.setItem('dayone-provider', selectedProvider);
+  updateModelButton();
 });
 const photoActions = document.getElementById('photoActions');
 button('Prendre une photo', () => cameraInput.click(), photoActions);

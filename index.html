@@ -6,9 +6,10 @@
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content"
   >
 
+  <meta name="theme-color" content="#fcfefd">
   <title>DayOne Midwife</title>
 
   <link
@@ -37,6 +38,7 @@
       <small>Assistant maternité</small>
     </div>
 
+    <button id="modelBtn" type="button" aria-pressed="false">Local</button>
     <button id="datasetBtn" type="button">Données</button>
     <button id="languageBtn" type="button" aria-label="Switch to English">EN</button>
 
@@ -54,6 +56,8 @@
   <!-- ========================================= -->
   <!-- CHAT -->
   <!-- ========================================= -->
+
+  <aside id="activePatient" class="active-patient" aria-live="polite" hidden></aside>
 
   <main id="chat">
 
@@ -125,6 +129,7 @@
 
 
     <button
+      aria-label="Send message"
       id="sendBtn"
       class="send-btn"
       type="button"
