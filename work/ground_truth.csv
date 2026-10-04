@@ -1,0 +1,536 @@
+pdf_page,patient,page_type,field_key,kind,value,x0,y0,x1,y1
+1,1,1,couverture > Nom de l'établissement sanitaire,text,CSCA Al Wifaq,0.3001,0.2034,0.3945,0.2185
+1,1,1,couverture > N° de la fiche,text,2026-823-001,0.1864,0.12,0.2835,0.1349
+1,1,1,couverture > Province,text,Kénitra,0.6118,0.1624,0.6612,0.1769
+1,1,1,couverture > Région,text,Rabat-Salé-Kénitra,0.1485,0.1611,0.2764,0.1764
+1,1,1,couverture > [x] Anémie,checkbox,NON_COCHÉ,,,,
+1,1,1,couverture > [x] Fixe,checkbox,COCHÉ,0.1484,0.3804,0.1685,0.3947
+1,1,1,couverture > [x] Grossesse classée à risque,checkbox,NON_COCHÉ,,,,
+1,1,1,couverture > [x] H.T.A,checkbox,NON_COCHÉ,,,,
+1,1,1,couverture > [x] Mobile,checkbox,NON_COCHÉ,,,,
+1,1,1,couverture > [x] Pré-éclampsie,checkbox,NON_COCHÉ,,,,
+2,1,2,identification_antecedents > Accouchement prématuré,text,,,,,
+2,1,2,identification_antecedents > Accouchement prématuré / Age gestationnel (SA),text,,,,,
+2,1,2,identification_antecedents > Accouchement prématuré / Date,text,,,,,
+2,1,2,identification_antecedents > Accouchement prématuré / Lieu,text,,,,,
+2,1,2,identification_antecedents > Age,text,31,0.129,0.0963,0.1449,0.109
+2,1,2,identification_antecedents > Allergie(s) / Famille de la femme,text,RAS,0.2277,0.3807,0.2516,0.3925
+2,1,2,identification_antecedents > Allergie(s) / Mari/famille,text,RAS,0.3617,0.3807,0.3852,0.3925
+2,1,2,identification_antecedents > Avortement / Age gestationnel (SA),text,,,,,
+2,1,2,identification_antecedents > Avortement / Date,text,,,,,
+2,1,2,identification_antecedents > Avortement / Lieu,text,,,,,
+2,1,2,identification_antecedents > Avortement / Nombre,text,,,,,
+2,1,2,identification_antecedents > Compl. nouveau-né (type),text,RAS,0.2538,0.7941,0.276,0.8054
+2,1,2,identification_antecedents > Compl. nouveau-né (type) / Accouch. 2,text,,,,,
+2,1,2,identification_antecedents > Compl. nouveau-né (type) / Accouch. 3,text,,,,,
+2,1,2,identification_antecedents > Compl. nouveau-né (type) / Accouch. 4,text,,,,,
+2,1,2,identification_antecedents > Complication (type) / Accouch. 1,text,RAS,0.2547,0.7275,0.2769,0.7385
+2,1,2,identification_antecedents > Complication (type) / Accouch. 2,text,,,,,
+2,1,2,identification_antecedents > Complication (type) / Accouch. 3,text,,,,,
+2,1,2,identification_antecedents > Complication (type) / Accouch. 4,text,,,,,
+2,1,2,identification_antecedents > Date #2 / Accouch. 1,text,12/11/2022,0.2554,0.6275,0.3173,0.6395
+2,1,2,identification_antecedents > Date #2 / Accouch. 2,text,,,,,
+2,1,2,identification_antecedents > Date #2 / Accouch. 3,text,,,,,
+2,1,2,identification_antecedents > Date #2 / Accouch. 4,text,,,,,
+2,1,2,identification_antecedents > Diabète / Famille de la femme,text,RAS,0.2281,0.3087,0.2523,0.3212
+2,1,2,identification_antecedents > Diabète / Mari/famille,text,RAS,0.3627,0.3098,0.3859,0.3211
+2,1,2,identification_antecedents > Frottis cervical / IVA (moins de 3 ans),text,Normal,0.3072,0.9427,0.3497,0.9558
+2,1,2,identification_antecedents > Gestation,text,3,0.1427,0.8498,0.1522,0.8646
+2,1,2,identification_antecedents > HTA / Chirurgicaux,text,Aucun,0.6383,0.2872,0.6684,0.2986
+2,1,2,identification_antecedents > HTA / Famille de la femme,text,RAS,0.2282,0.2849,0.2522,0.2965
+2,1,2,identification_antecedents > HTA / Gynécologiques,text,Cycles réguliers,0.7729,0.288,0.8459,0.2999
+2,1,2,identification_antecedents > HTA / Mari/famille,text,RAS,0.3629,0.2855,0.3864,0.298
+2,1,2,identification_antecedents > HTA / Médicaux,text,RAS,0.5288,0.2877,0.5508,0.2985
+2,1,2,identification_antecedents > Le #1,text,12/05/2022,0.529,0.9036,0.6012,0.9171
+2,1,2,identification_antecedents > Le #2,text,,,,,
+2,1,2,identification_antecedents > Maladies héréditaires,text,Père,0.2281,0.3329,0.2506,0.3448
+2,1,2,identification_antecedents > Maladies héréditaires / Mari/famille,text,RAS,0.3625,0.3338,0.3856,0.3451
+2,1,2,identification_antecedents > Malformations / Famille de la femme,text,RAS,0.2275,0.3564,0.2517,0.3682
+2,1,2,identification_antecedents > Malformations / Mari/famille,text,RAS,0.3619,0.3565,0.3862,0.369
+2,1,2,identification_antecedents > Modalité d'extraction / Accouch. 1,text,Voie basse,0.2553,0.661,0.3053,0.6727
+2,1,2,identification_antecedents > Modalité d'extraction / Accouch. 2,text,,,,,
+2,1,2,identification_antecedents > Modalité d'extraction / Accouch. 3,text,,,,,
+2,1,2,identification_antecedents > Modalité d'extraction / Accouch. 4,text,,,,,
+2,1,2,identification_antecedents > Niveau d'instruction,text,Lycée,0.2219,0.1228,0.2523,0.1359
+2,1,2,identification_antecedents > Nombre d'enfants vivants,text,1,0.6394,0.8525,0.6488,0.8665
+2,1,2,identification_antecedents > Parité,text,1,0.3217,0.8508,0.3319,0.8658
+2,1,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 1,text,3626 g,0.2542,0.7611,0.289,0.7724
+2,1,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 2,text,,,,,
+2,1,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 3,text,,,,,
+2,1,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 4,text,,,,,
+2,1,2,identification_antecedents > Profession #1,text,Étudiante,0.5917,0.1244,0.6491,0.1378
+2,1,2,identification_antecedents > Profession #2,text,Ouvrier,0.5909,0.1768,0.6329,0.1898
+2,1,2,identification_antecedents > Si césarienne : indication,text,,,,,
+2,1,2,identification_antecedents > [x] Consanguinité,checkbox,NON_COCHÉ,,,,
+2,1,2,identification_antecedents > [x] Grossesse désirée,checkbox,COCHÉ,0.5028,0.2066,0.523,0.2208
+2,1,2,identification_antecedents > [x] VAT = 1,checkbox,COCHÉ,0.1202,0.8757,0.1403,0.89
+2,1,2,identification_antecedents > [x] VAT = 2,checkbox,NON_COCHÉ,,,,
+2,1,2,identification_antecedents > [x] VAT = 3,checkbox,NON_COCHÉ,,,,
+2,1,2,identification_antecedents > [x] VAT = 4,checkbox,NON_COCHÉ,,,,
+2,1,2,identification_antecedents > [x] VAT = 5,checkbox,NON_COCHÉ,,,,
+2,1,2,identification_antecedents > [x] Vaccinée contre l'hépatite B,checkbox,NON_COCHÉ,,,,
+2,1,2,identification_antecedents > [x] Vaccinée contre la rubéole,checkbox,COCHÉ,0.0596,0.8993,0.0797,0.9135
+3,1,3,grossesse_actuelle > Ag HBs / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Ag HBs / 1er trimestre / Visite 2,text,Neg,0.334,0.6791,0.3526,0.69
+3,1,3,grossesse_actuelle > Ag HBs / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Ag HBs / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > Age probable / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Age probable / 1er trimestre / Visite 2,text,12 SA,0.3338,0.2345,0.3644,0.2459
+3,1,3,grossesse_actuelle > Age probable / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Age probable / 2ème trimestre / Visite 2,text,22 SA,0.5595,0.2341,0.5904,0.2461
+3,1,3,grossesse_actuelle > Age probable / 2ème trimestre / Visite 3,text,27 SA,0.6343,0.2344,0.6655,0.2455
+3,1,3,grossesse_actuelle > Age probable / 3ème trimestre / 7ème mois,text,31 SA,0.7102,0.2347,0.741,0.2462
+3,1,3,grossesse_actuelle > Age probable / 3ème trimestre / 8ème mois,text,35 SA,0.7854,0.2341,0.816,0.2459
+3,1,3,grossesse_actuelle > Age probable / 3ème trimestre / 9ème mois,text,38 SA,0.8606,0.2343,0.8913,0.2456
+3,1,3,grossesse_actuelle > Albuminurie / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Albuminurie / 1er trimestre / Visite 2,text,Neg,0.3336,0.5941,0.3525,0.6048
+3,1,3,grossesse_actuelle > Albuminurie / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Albuminurie / 2ème trimestre / Visite 2,text,Neg,0.5598,0.5941,0.5784,0.6048
+3,1,3,grossesse_actuelle > Albuminurie / 2ème trimestre / Visite 3,text,Neg,0.6347,0.5935,0.6538,0.6052
+3,1,3,grossesse_actuelle > Albuminurie / 3ème trimestre / 7ème mois,text,Neg,0.7104,0.5944,0.7288,0.6053
+3,1,3,grossesse_actuelle > Albuminurie / 3ème trimestre / 8ème mois,text,Neg,0.7851,0.5942,0.8041,0.6055
+3,1,3,grossesse_actuelle > Albuminurie / 3ème trimestre / 9ème mois,text,Neg,0.8605,0.594,0.8792,0.6048
+3,1,3,grossesse_actuelle > Anomalies squelette / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Anomalies squelette / 1er trimestre / Visite 2,text,RAS,0.3337,0.3194,0.3557,0.3305
+3,1,3,grossesse_actuelle > Anomalies squelette / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Anomalies squelette / 2ème trimestre / Visite 2,text,RAS,0.5596,0.3192,0.582,0.3303
+3,1,3,grossesse_actuelle > Anomalies squelette / 2ème trimestre / Visite 3,text,RAS,0.6348,0.3193,0.6574,0.3306
+3,1,3,grossesse_actuelle > Anomalies squelette / 3ème trimestre / 7ème mois,text,RAS,0.7102,0.3193,0.7327,0.3303
+3,1,3,grossesse_actuelle > Anomalies squelette / 3ème trimestre / 8ème mois,text,RAS,0.7855,0.3194,0.8076,0.3305
+3,1,3,grossesse_actuelle > Anomalies squelette / 3ème trimestre / 9ème mois,text,RAS,0.8602,0.3192,0.8827,0.3299
+3,1,3,grossesse_actuelle > BCF / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > BCF / 1er trimestre / Visite 2,text,—,0.3338,0.4462,0.3424,0.4564
+3,1,3,grossesse_actuelle > BCF / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > BCF / 2ème trimestre / Visite 2,text,150,0.5596,0.4464,0.5798,0.4574
+3,1,3,grossesse_actuelle > BCF / 2ème trimestre / Visite 3,text,148,0.635,0.446,0.6548,0.4573
+3,1,3,grossesse_actuelle > BCF / 3ème trimestre / 7ème mois,text,149,0.7097,0.4462,0.7298,0.4571
+3,1,3,grossesse_actuelle > BCF / 3ème trimestre / 8ème mois,text,139,0.785,0.4458,0.8051,0.457
+3,1,3,grossesse_actuelle > BCF / 3ème trimestre / 9ème mois,text,148,0.8608,0.4462,0.8808,0.4571
+3,1,3,grossesse_actuelle > Bilan glycémique / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Bilan glycémique / 1er trimestre / Visite 2,text,0.93 g/L,0.334,0.7627,0.376,0.7743
+3,1,3,grossesse_actuelle > Bilan glycémique / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Bilan glycémique / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > DATE DE DÉPASSEMENT DE TERME,text,07/02/2026,0.7113,0.1026,0.791,0.1174
+3,1,3,grossesse_actuelle > DATE PRÉVUE D'ACCOUCHEMENT,text,31/01/2026,0.3136,0.1029,0.3935,0.1176
+3,1,3,grossesse_actuelle > DDR,text,26/04/2025,0.1174,0.0822,0.1964,0.0974
+3,1,3,grossesse_actuelle > Examen au spéculum / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Examen au spéculum / 1er trimestre / Visite 2,text,—,0.3335,0.4678,0.3422,0.4782
+3,1,3,grossesse_actuelle > Examen au spéculum / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Examen au spéculum / 2ème trimestre / Visite 2,text,—,0.5597,0.4681,0.568,0.4782
+3,1,3,grossesse_actuelle > Examen au spéculum / 2ème trimestre / Visite 3,text,—,0.635,0.4675,0.643,0.4774
+3,1,3,grossesse_actuelle > Examen au spéculum / 3ème trimestre / 7ème mois,text,—,0.7103,0.4682,0.7184,0.4782
+3,1,3,grossesse_actuelle > Examen au spéculum / 3ème trimestre / 8ème mois,text,—,0.785,0.467,0.7936,0.477
+3,1,3,grossesse_actuelle > Examen au spéculum / 3ème trimestre / 9ème mois,text,—,0.8608,0.4686,0.8689,0.4785
+3,1,3,grossesse_actuelle > Examen des seins / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Examen des seins / 1er trimestre / Visite 2,text,Normaux,0.3339,0.3612,0.3774,0.3729
+3,1,3,grossesse_actuelle > Examen des seins / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Examen des seins / 2ème trimestre / Visite 2,text,Normaux,0.5596,0.361,0.6029,0.3725
+3,1,3,grossesse_actuelle > Examen des seins / 2ème trimestre / Visite 3,text,Normaux,0.6348,0.361,0.679,0.3725
+3,1,3,grossesse_actuelle > Examen des seins / 3ème trimestre / 7ème mois,text,Normaux,0.7102,0.361,0.7539,0.3729
+3,1,3,grossesse_actuelle > Examen des seins / 3ème trimestre / 8ème mois,text,Normaux,0.7855,0.3611,0.8291,0.3729
+3,1,3,grossesse_actuelle > Examen des seins / 3ème trimestre / 9ème mois,text,Normaux,0.8605,0.3609,0.9037,0.3727
+3,1,3,grossesse_actuelle > Examen fait par / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Examen fait par / 1er trimestre / Visite 2,text,Dr Benjelloun,0.3341,0.8685,0.3993,0.8802
+3,1,3,grossesse_actuelle > Examen fait par / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Examen fait par / 2ème trimestre / Visite 2,text,Sage-femme,0.56,0.8687,0.6174,0.8802
+3,1,3,grossesse_actuelle > Examen fait par / 2ème trimestre / Visite 3,text,Inf. Zahra,0.6353,0.8686,0.6896,0.8803
+3,1,3,grossesse_actuelle > Examen fait par / 3ème trimestre / 7ème mois,text,Dr Benjelloun,0.7105,0.8685,0.7753,0.8803
+3,1,3,grossesse_actuelle > Examen fait par / 3ème trimestre / 8ème mois,text,Dr Chakir,0.7852,0.8684,0.8355,0.8799
+3,1,3,grossesse_actuelle > Examen fait par / 3ème trimestre / 9ème mois,text,Sage-femme,0.8609,0.8683,0.9189,0.88
+3,1,3,grossesse_actuelle > Fer / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Fer / 1er trimestre / Visite 2,text,Oui,0.3341,0.8264,0.3498,0.8379
+3,1,3,grossesse_actuelle > Fer / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Fer / 2ème trimestre / Visite 2,text,Oui,0.5599,0.8265,0.5751,0.8375
+3,1,3,grossesse_actuelle > Glucosurie / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Glucosurie / 1er trimestre / Visite 2,text,Neg,0.334,0.5725,0.3525,0.5833
+3,1,3,grossesse_actuelle > Glucosurie / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Glucosurie / 2ème trimestre / Visite 2,text,Neg,0.5593,0.5722,0.5788,0.5843
+3,1,3,grossesse_actuelle > Glucosurie / 2ème trimestre / Visite 3,text,Neg,0.635,0.5728,0.6535,0.5842
+3,1,3,grossesse_actuelle > Glucosurie / 3ème trimestre / 7ème mois,text,Neg,0.7101,0.5729,0.7286,0.5841
+3,1,3,grossesse_actuelle > Glucosurie / 3ème trimestre / 8ème mois,text,Neg,0.7852,0.5727,0.8043,0.5837
+3,1,3,grossesse_actuelle > Glucosurie / 3ème trimestre / 9ème mois,text,Neg,0.8609,0.5724,0.8797,0.5841
+3,1,3,grossesse_actuelle > HU (cm) / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > HU (cm) / 1er trimestre / Visite 2,text,—,0.3339,0.4247,0.3422,0.435
+3,1,3,grossesse_actuelle > HU (cm) / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > HU (cm) / 2ème trimestre / Visite 2,text,18,0.5593,0.4251,0.5725,0.4363
+3,1,3,grossesse_actuelle > HU (cm) / 2ème trimestre / Visite 3,text,23,0.6347,0.4246,0.6482,0.4355
+3,1,3,grossesse_actuelle > HU (cm) / 3ème trimestre / 7ème mois,text,27,0.71,0.4248,0.7235,0.4361
+3,1,3,grossesse_actuelle > HU (cm) / 3ème trimestre / 8ème mois,text,31,0.7852,0.4249,0.7987,0.4359
+3,1,3,grossesse_actuelle > HU (cm) / 3ème trimestre / 9ème mois,text,34,0.8608,0.4249,0.8741,0.4361
+3,1,3,grossesse_actuelle > Hémoglobine / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Hémoglobine / 1er trimestre / Visite 2,text,11.8 g/dL,0.3339,0.7204,0.3814,0.7323
+3,1,3,grossesse_actuelle > Hémoglobine / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Hémoglobine / 2ème trimestre / Visite 2,text,11.4 g/dL,0.5597,0.7202,0.6074,0.7316
+3,1,3,grossesse_actuelle > Mouvements actifs / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Mouvements actifs / 1er trimestre / Visite 2,text,—,0.3335,0.4043,0.3425,0.4151
+3,1,3,grossesse_actuelle > Mouvements actifs / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Mouvements actifs / 2ème trimestre / Visite 2,text,Oui,0.5596,0.404,0.5749,0.4148
+3,1,3,grossesse_actuelle > Mouvements actifs / 2ème trimestre / Visite 3,text,Oui,0.6348,0.4043,0.6503,0.415
+3,1,3,grossesse_actuelle > Mouvements actifs / 3ème trimestre / 7ème mois,text,Oui,0.7101,0.4038,0.7254,0.4151
+3,1,3,grossesse_actuelle > Mouvements actifs / 3ème trimestre / 8ème mois,text,Oui,0.7855,0.4035,0.8009,0.4146
+3,1,3,grossesse_actuelle > Mouvements actifs / 3ème trimestre / 9ème mois,text,Oui,0.8607,0.4035,0.8758,0.4145
+3,1,3,grossesse_actuelle > Plaquettes / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Plaquettes / 1er trimestre / Visite 2,text,186k,0.3339,0.7417,0.3586,0.7534
+3,1,3,grossesse_actuelle > Plaquettes / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Plaquettes / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > Poids (kg) / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Poids (kg) / 1er trimestre / Visite 2,text,58.8,0.3337,0.2765,0.356,0.2883
+3,1,3,grossesse_actuelle > Poids (kg) / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Poids (kg) / 2ème trimestre / Visite 2,text,62.7,0.5592,0.2767,0.5822,0.2875
+3,1,3,grossesse_actuelle > Poids (kg) / 2ème trimestre / Visite 3,text,64.3,0.6349,0.2766,0.6579,0.2882
+3,1,3,grossesse_actuelle > Poids (kg) / 3ème trimestre / 7ème mois,text,64.8,0.7102,0.277,0.7326,0.2879
+3,1,3,grossesse_actuelle > Poids (kg) / 3ème trimestre / 8ème mois,text,66.2,0.7849,0.2768,0.8077,0.2879
+3,1,3,grossesse_actuelle > Poids (kg) / 3ème trimestre / 9ème mois,text,66.8,0.8603,0.2767,0.8835,0.2875
+3,1,3,grossesse_actuelle > RAI (si Rh négatif) / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > RAI (si Rh négatif) / 1er trimestre / Visite 2,text,Neg,0.3341,0.7842,0.3525,0.7959
+3,1,3,grossesse_actuelle > RAI (si Rh négatif) / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > RAI (si Rh négatif) / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > Rendez-vous / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Rendez-vous / 1er trimestre / Visite 2,text,17/08/2025,0.3337,0.1708,0.3956,0.1827
+3,1,3,grossesse_actuelle > Rendez-vous / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Rendez-vous / 2ème trimestre / Visite 2,text,26/10/2025,0.5596,0.1706,0.621,0.1827
+3,1,3,grossesse_actuelle > Rendez-vous / 2ème trimestre / Visite 3,text,29/11/2025,0.6348,0.1708,0.6959,0.1827
+3,1,3,grossesse_actuelle > Rendez-vous / 3ème trimestre / 7ème mois,text,29/12/2025,0.7101,0.1708,0.771,0.1826
+3,1,3,grossesse_actuelle > Rendez-vous / 3ème trimestre / 8ème mois,text,26/01/2026,0.7853,0.1705,0.8472,0.1825
+3,1,3,grossesse_actuelle > Rendez-vous / 3ème trimestre / 9ème mois,text,—,0.8606,0.1717,0.8688,0.1817
+3,1,3,grossesse_actuelle > Rubéole / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Rubéole / 1er trimestre / Visite 2,text,Immune,0.3339,0.6144,0.3725,0.6267
+3,1,3,grossesse_actuelle > Rubéole / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Rubéole / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > Syphilis (TPHA/VDRL) / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Syphilis (TPHA/VDRL) / 1er trimestre / Visite 2,text,Neg,0.3339,0.6576,0.3525,0.6689
+3,1,3,grossesse_actuelle > Syphilis (TPHA/VDRL) / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Syphilis (TPHA/VDRL) / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > Sérologie VIH / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Sérologie VIH / 1er trimestre / Visite 2,text,Neg,0.3337,0.7,0.3524,0.711
+3,1,3,grossesse_actuelle > Sérologie VIH / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Sérologie VIH / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > TA / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TA / 1er trimestre / Visite 2,text,104/74,0.3338,0.2979,0.3712,0.3095
+3,1,3,grossesse_actuelle > TA / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TA / 2ème trimestre / Visite 2,text,106/77,0.5596,0.2981,0.5968,0.3092
+3,1,3,grossesse_actuelle > TA / 2ème trimestre / Visite 3,text,102/60,0.6349,0.2981,0.6726,0.3091
+3,1,3,grossesse_actuelle > TA / 3ème trimestre / 7ème mois,text,103/66,0.7101,0.2973,0.7473,0.3087
+3,1,3,grossesse_actuelle > TA / 3ème trimestre / 8ème mois,text,115/63,0.7854,0.2978,0.8226,0.3092
+3,1,3,grossesse_actuelle > TA / 3ème trimestre / 9ème mois,text,110/60,0.8605,0.2976,0.898,0.3089
+3,1,3,grossesse_actuelle > TV : bassin / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TV : bassin / 1er trimestre / Visite 2,text,—,0.3336,0.5309,0.3426,0.5417
+3,1,3,grossesse_actuelle > TV : bassin / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TV : bassin / 2ème trimestre / Visite 2,text,—,0.5598,0.5305,0.5679,0.5406
+3,1,3,grossesse_actuelle > TV : bassin / 2ème trimestre / Visite 3,text,—,0.6351,0.5319,0.643,0.5417
+3,1,3,grossesse_actuelle > TV : bassin / 3ème trimestre / 7ème mois,text,—,0.7102,0.5312,0.7183,0.5412
+3,1,3,grossesse_actuelle > TV : bassin / 3ème trimestre / 8ème mois,text,—,0.7851,0.5311,0.7943,0.5419
+3,1,3,grossesse_actuelle > TV : bassin / 3ème trimestre / 9ème mois,text,—,0.8609,0.5317,0.8691,0.5418
+3,1,3,grossesse_actuelle > TV : présentation / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TV : présentation / 1er trimestre / Visite 2,text,—,0.3339,0.5093,0.3424,0.5197
+3,1,3,grossesse_actuelle > TV : présentation / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TV : présentation / 2ème trimestre / Visite 2,text,—,0.5593,0.5096,0.5683,0.5202
+3,1,3,grossesse_actuelle > TV : présentation / 2ème trimestre / Visite 3,text,—,0.6349,0.5092,0.6435,0.5195
+3,1,3,grossesse_actuelle > TV : présentation / 3ème trimestre / 7ème mois,text,—,0.7102,0.5097,0.7182,0.5195
+3,1,3,grossesse_actuelle > TV : présentation / 3ème trimestre / 8ème mois,text,Céphalique,0.7856,0.5089,0.836,0.5207
+3,1,3,grossesse_actuelle > TV : présentation / 3ème trimestre / 9ème mois,text,Céphalique,0.8607,0.5093,0.9115,0.5207
+3,1,3,grossesse_actuelle > TV : état du col / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TV : état du col / 1er trimestre / Visite 2,text,—,0.3338,0.4888,0.3418,0.4986
+3,1,3,grossesse_actuelle > TV : état du col / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > TV : état du col / 2ème trimestre / Visite 2,text,—,0.5597,0.4898,0.5678,0.4997
+3,1,3,grossesse_actuelle > TV : état du col / 2ème trimestre / Visite 3,text,—,0.635,0.4893,0.6433,0.4995
+3,1,3,grossesse_actuelle > TV : état du col / 3ème trimestre / 7ème mois,text,Fermé,0.7098,0.4878,0.7394,0.4996
+3,1,3,grossesse_actuelle > TV : état du col / 3ème trimestre / 8ème mois,text,Fermé,0.7854,0.488,0.815,0.4994
+3,1,3,grossesse_actuelle > TV : état du col / 3ème trimestre / 9ème mois,text,Fermé,0.8606,0.4877,0.8902,0.4994
+3,1,3,grossesse_actuelle > Taille,text,155 cm,0.3722,0.0829,0.4197,0.0967
+3,1,3,grossesse_actuelle > Toxoplasmose / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Toxoplasmose / 1er trimestre / Visite 2,text,Immune,0.3336,0.6359,0.3725,0.6475
+3,1,3,grossesse_actuelle > Toxoplasmose / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Toxoplasmose / 2ème trimestre / Visite 2,text,,,,,
+3,1,3,grossesse_actuelle > Venue le / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Venue le / 1er trimestre / Visite 2,text,20/07/2025,0.3338,0.192,0.395,0.2038
+3,1,3,grossesse_actuelle > Venue le / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Venue le / 2ème trimestre / Visite 2,text,28/09/2025,0.5596,0.192,0.6211,0.2038
+3,1,3,grossesse_actuelle > Venue le / 2ème trimestre / Visite 3,text,01/11/2025,0.6349,0.1922,0.6958,0.2035
+3,1,3,grossesse_actuelle > Venue le / 3ème trimestre / 7ème mois,text,01/12/2025,0.71,0.1919,0.7719,0.2036
+3,1,3,grossesse_actuelle > Venue le / 3ème trimestre / 8ème mois,text,29/12/2025,0.7852,0.1918,0.8474,0.2036
+3,1,3,grossesse_actuelle > Venue le / 3ème trimestre / 9ème mois,text,18/01/2026,0.8607,0.1921,0.922,0.2039
+3,1,3,grossesse_actuelle > Visites de relance / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Visites de relance / 1er trimestre / Visite 2,text,Oui,0.3338,0.2132,0.3489,0.2245
+3,1,3,grossesse_actuelle > Visites de relance / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Visites de relance / 2ème trimestre / Visite 2,text,Non,0.5595,0.2139,0.58,0.2244
+3,1,3,grossesse_actuelle > Visites de relance / 2ème trimestre / Visite 3,text,Non,0.6344,0.2131,0.6549,0.2244
+3,1,3,grossesse_actuelle > Visites de relance / 3ème trimestre / 7ème mois,text,Non,0.7101,0.2131,0.7304,0.2242
+3,1,3,grossesse_actuelle > Visites de relance / 3ème trimestre / 8ème mois,text,Non,0.7853,0.2132,0.8059,0.2248
+3,1,3,grossesse_actuelle > Visites de relance / 3ème trimestre / 9ème mois,text,Non,0.8601,0.2131,0.8812,0.2246
+3,1,3,grossesse_actuelle > [x] DATE DE DÉPASSEMENT DE TERME = Rh+,checkbox,COCHÉ,0.8454,0.0977,0.8655,0.112
+3,1,3,grossesse_actuelle > [x] Groupage = A,checkbox,NON_COCHÉ,,,,
+3,1,3,grossesse_actuelle > [x] Groupage = AB,checkbox,NON_COCHÉ,,,,
+3,1,3,grossesse_actuelle > [x] Groupage = B,checkbox,COCHÉ,0.6804,0.0812,0.7005,0.0954
+3,1,3,grossesse_actuelle > [x] Groupage = O,checkbox,NON_COCHÉ,,,,
+3,1,3,grossesse_actuelle > [x] Groupage = Rh-,checkbox,NON_COCHÉ,,,,
+3,1,3,grossesse_actuelle > État des conjonctives / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > État des conjonctives / 1er trimestre / Visite 2,text,Normales,0.3337,0.3399,0.3787,0.3515
+3,1,3,grossesse_actuelle > État des conjonctives / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > État des conjonctives / 2ème trimestre / Visite 2,text,Normales,0.5597,0.3396,0.6047,0.3517
+3,1,3,grossesse_actuelle > État des conjonctives / 2ème trimestre / Visite 3,text,Normales,0.6349,0.3404,0.68,0.3518
+3,1,3,grossesse_actuelle > État des conjonctives / 3ème trimestre / 7ème mois,text,Normales,0.7096,0.3398,0.756,0.3515
+3,1,3,grossesse_actuelle > État des conjonctives / 3ème trimestre / 8ème mois,text,Normales,0.7854,0.3398,0.8311,0.3518
+3,1,3,grossesse_actuelle > État des conjonctives / 3ème trimestre / 9ème mois,text,Normales,0.8607,0.3398,0.9057,0.3517
+3,1,3,grossesse_actuelle > Œdèmes / 1er trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Œdèmes / 1er trimestre / Visite 2,text,Non,0.3339,0.3825,0.3543,0.3937
+3,1,3,grossesse_actuelle > Œdèmes / 2ème trimestre / Visite 1,text,,,,,
+3,1,3,grossesse_actuelle > Œdèmes / 2ème trimestre / Visite 2,text,Non,0.5597,0.3833,0.5796,0.3937
+3,1,3,grossesse_actuelle > Œdèmes / 2ème trimestre / Visite 3,text,Non,0.635,0.3825,0.6557,0.3938
+3,1,3,grossesse_actuelle > Œdèmes / 3ème trimestre / 7ème mois,text,Non,0.7099,0.3828,0.7309,0.3939
+3,1,3,grossesse_actuelle > Œdèmes / 3ème trimestre / 8ème mois,text,Non,0.7854,0.3822,0.8055,0.394
+3,1,3,grossesse_actuelle > Œdèmes / 3ème trimestre / 9ème mois,text,Non,0.8608,0.3825,0.8811,0.3939
+4,1,4,accouchement > Anomalie à préciser,text,Aucune,0.5047,0.9073,0.5491,0.9216
+4,1,4,accouchement > Date de l'accouchement,text,03/02/2026,0.23,0.3521,0.3173,0.3686
+4,1,4,accouchement > Poids à la naissance,text,3587 g,0.5093,0.8569,0.554,0.8717
+4,1,4,accouchement > Préciser l'indication,text,,,,,
+4,1,4,accouchement > Périmètre crânien à la naissance,text,34 cm,0.5821,0.8802,0.6212,0.8954
+4,1,4,accouchement > Sexe,text,F,0.4158,0.8349,0.4251,0.8478
+4,1,4,accouchement > [x] A domicile,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Assisté par un personnel qualifié,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Au moment de l'accouchement,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Avec épisiotomie,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Clinique privée,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Césarienne : Programmée,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] En milieu surveillé,checkbox,COCHÉ,0.0604,0.1634,0.0805,0.1777
+4,1,4,accouchement > [x] Etat du nouveau-né = Vivant,checkbox,COCHÉ,0.3612,0.8037,0.3813,0.818
+4,1,4,accouchement > [x] Forceps,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Hémorragie,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Infection,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Maternité,checkbox,COCHÉ,0.3545,0.176,0.3747,0.1902
+4,1,4,accouchement > [x] Mode de l'accouchement = Voie basse non instrumentale,checkbox,COCHÉ,0.3573,0.4068,0.3775,0.421
+4,1,4,accouchement > [x] Pré-éclampsie,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Urgence,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > [x] Voie basse instrumentale,checkbox,NON_COCHÉ,,,,
+4,1,4,accouchement > Âge gestationnel,text,40 SA,0.4868,0.9305,0.527,0.9454
+5,1,5,pp_precoce_mere > ,text,,,,,
+5,1,5,pp_precoce_mere > Date de la consultation,text,10/02/2026,0.7133,0.0854,0.7924,0.1001
+5,1,5,pp_precoce_mere > Etat de la cicatrice,text,,,,,
+5,1,5,pp_precoce_mere > Notion de prise de médicaments / Douloureux à la dorsiflexion,text,,,,,
+5,1,5,pp_precoce_mere > Poids,text,66 kg,0.6534,0.1585,0.6887,0.1732
+5,1,5,pp_precoce_mere > Pouls,text,83,0.4848,0.1599,0.5028,0.1736
+5,1,5,pp_precoce_mere > Prochain rendez-vous le,text,17/03/2026,0.2348,0.672,0.3071,0.6854
+5,1,5,pp_precoce_mere > TA,text,110/71,0.2836,0.1584,0.3318,0.1728
+5,1,5,pp_precoce_mere > T°,text,37.2,0.1057,0.158,0.1346,0.1728
+5,1,5,pp_precoce_mere > [x] Anémie,checkbox,NON_COCHÉ,,,,
+5,1,5,pp_precoce_mere > [x] Césarienne,checkbox,NON_COCHÉ,,,,
+5,1,5,pp_precoce_mere > [x] Désire utiliser une méthode,checkbox,COCHÉ,0.0714,0.7385,0.0915,0.7527
+5,1,5,pp_precoce_mere > [x] Etat des conjonctives = Décolorées,checkbox,NON_COCHÉ,,,,
+5,1,5,pp_precoce_mere > [x] Etat des conjonctives = Normales,checkbox,COCHÉ,0.2673,0.1811,0.2875,0.1954
+5,1,5,pp_precoce_mere > [x] Etat des lochies = Fade,checkbox,COCHÉ,0.2666,0.2233,0.2867,0.2376
+5,1,5,pp_precoce_mere > [x] Etat des seins = Normal #3,checkbox,COCHÉ,0.2156,0.3975,0.2357,0.4117
+5,1,5,pp_precoce_mere > [x] Etat des sphincters (anal et urétral) = Normal #2,checkbox,COCHÉ,0.3837,0.3502,0.4039,0.3645
+5,1,5,pp_precoce_mere > [x] Fer,checkbox,COCHÉ,0.0981,0.6296,0.1183,0.6438
+5,1,5,pp_precoce_mere > [x] Hémorragie,checkbox,NON_COCHÉ,,,,
+5,1,5,pp_precoce_mere > [x] Infection,checkbox,NON_COCHÉ,,,,
+5,1,5,pp_precoce_mere > [x] Normal #1,checkbox,COCHÉ,0.0988,0.2854,0.119,0.2997
+5,1,5,pp_precoce_mere > [x] Normal #4,checkbox,COCHÉ,0.0984,0.4396,0.1185,0.4539
+5,1,5,pp_precoce_mere > [x] Présence du globe utérin,checkbox,COCHÉ,0.0749,0.2024,0.095,0.2167
+5,1,5,pp_precoce_mere > [x] Réparée,checkbox,NON_COCHÉ,,,,
+5,1,5,"pp_precoce_mere > [x] Si oui, laquelle = DIU",checkbox,NON_COCHÉ,,,,
+5,1,5,"pp_precoce_mere > [x] Si oui, laquelle = pilule",checkbox,COCHÉ,0.2308,0.7609,0.251,0.7752
+5,1,5,pp_precoce_mere > [x] Vitamine A,checkbox,COCHÉ,0.2311,0.6304,0.2512,0.6447
+5,1,5,pp_precoce_mere > [x] sanglantes,checkbox,COCHÉ,0.3836,0.2435,0.4037,0.2577
+5,1,5,pp_precoce_mere > [x] Épisiotomie,checkbox,NON_COCHÉ,,,,
+5,1,5,pp_precoce_mere > pilule,text,,,,,
+6,1,6,pp_precoce_nouveau_ne > Age,text,7 jours,0.1175,0.127,0.1607,0.1411
+6,1,6,pp_precoce_nouveau_ne > Autres à préciser #1,text,Néant,0.2011,0.3282,0.2377,0.3418
+6,1,6,pp_precoce_nouveau_ne > Autres à préciser #2,text,RAS,0.2237,0.4512,0.2505,0.4644
+6,1,6,pp_precoce_nouveau_ne > Date de la consultation,text,10/02/2026,0.7147,0.0854,0.7942,0.1006
+6,1,6,pp_precoce_nouveau_ne > Décision prise,text,Poursuivre,0.1813,0.7252,0.2461,0.7404
+6,1,6,pp_precoce_nouveau_ne > Décision prise / Infection,text,l'allaitement exclusif,0.2497,0.7256,0.3732,0.7407
+6,1,6,pp_precoce_nouveau_ne > Poids,text,3485 g,0.6881,0.1287,0.7333,0.1432
+6,1,6,pp_precoce_nouveau_ne > Périmètre crânien,text,34 cm,0.4412,0.1535,0.4799,0.1682
+6,1,6,pp_precoce_nouveau_ne > Revenir pour une visite de suivi nécessaire le,text,12/03/2026,0.3574,0.9045,0.437,0.9191
+6,1,6,pp_precoce_nouveau_ne > Taille,text,48 cm,0.1255,0.1527,0.1642,0.1674
+6,1,6,pp_precoce_nouveau_ne > Température,text,37.1 °C,0.412,0.1278,0.4598,0.1424
+6,1,6,pp_precoce_nouveau_ne > Traitement prescrit,text,Néant,0.2083,0.7615,0.2488,0.7757
+6,1,6,pp_precoce_nouveau_ne > Vu par,text,Inf. Zahra,0.1362,0.6893,0.2079,0.7042
+6,1,6,pp_precoce_nouveau_ne > [x] Allaitement = exclusivement au sein,checkbox,COCHÉ,0.1837,0.2034,0.2038,0.2177
+6,1,6,pp_precoce_nouveau_ne > [x] Evaluation de l'allaitement maternel = Normal,checkbox,COCHÉ,0.4165,0.4781,0.4366,0.4923
+6,1,6,pp_precoce_nouveau_ne > [x] Nouveau-né prématuré,checkbox,NON_COCHÉ,,,,
+6,1,6,pp_precoce_nouveau_ne > [x] Supplémentation en vitamine D,checkbox,COCHÉ,0.0742,0.5461,0.0944,0.5604
+6,1,6,pp_precoce_nouveau_ne > [x] Vaccins administrés ce jour = BCG,checkbox,COCHÉ,0.316,0.5224,0.3361,0.5367
+6,1,6,pp_precoce_nouveau_ne > [x] Vaccins administrés ce jour = HB,checkbox,COCHÉ,0.4167,0.5236,0.4369,0.5379
+7,1,7,pp_tardif_mere > ,text,,,,,
+7,1,7,pp_tardif_mere > Date de la consultation,text,18/03/2026,0.7159,0.0863,0.7958,0.1009
+7,1,7,pp_tardif_mere > Etat de la cicatrice,text,,,,,
+7,1,7,pp_tardif_mere > Etat de la cicatrice / Anormal,text,,,,,
+7,1,7,pp_tardif_mere > Notion de prise de médicaments / Douloureux à la dorsiflexion,text,,,,,
+7,1,7,pp_tardif_mere > Poids,text,64 kg,0.6553,0.1594,0.6905,0.1742
+7,1,7,pp_tardif_mere > Pouls,text,75,0.4873,0.1587,0.5048,0.1728
+7,1,7,pp_tardif_mere > TA,text,107/71,0.286,0.1582,0.3341,0.1725
+7,1,7,pp_tardif_mere > T°,text,37.0,0.1077,0.157,0.1363,0.1715
+7,1,7,pp_tardif_mere > [x] Anémie,checkbox,NON_COCHÉ,,,,
+7,1,7,pp_tardif_mere > [x] Césarienne,checkbox,NON_COCHÉ,,,,
+7,1,7,pp_tardif_mere > [x] Désire utiliser une méthode,checkbox,COCHÉ,0.0706,0.7381,0.0908,0.7523
+7,1,7,pp_tardif_mere > [x] Etat des conjonctives = Décolorées,checkbox,NON_COCHÉ,,,,
+7,1,7,pp_tardif_mere > [x] Etat des conjonctives = Normales,checkbox,COCHÉ,0.2676,0.1813,0.2877,0.1956
+7,1,7,pp_tardif_mere > [x] Etat des lochies = Fade,checkbox,COCHÉ,0.2671,0.2235,0.2872,0.2377
+7,1,7,pp_tardif_mere > [x] Etat des seins = Normal #3,checkbox,COCHÉ,0.2153,0.3966,0.2355,0.4108
+7,1,7,pp_tardif_mere > [x] Etat des sphincters (anal et urétral) = Normal #2,checkbox,COCHÉ,0.384,0.349,0.4042,0.3633
+7,1,7,pp_tardif_mere > [x] Fer,checkbox,COCHÉ,0.0964,0.6292,0.1166,0.6435
+7,1,7,pp_tardif_mere > [x] Normal #4,checkbox,COCHÉ,0.0969,0.4396,0.1171,0.4539
+7,1,7,pp_tardif_mere > [x] Prescription faite,checkbox,COCHÉ,0.0701,0.7811,0.0903,0.7954
+7,1,7,pp_tardif_mere > [x] Réparée,checkbox,COCHÉ,0.3339,0.3054,0.354,0.3196
+7,1,7,"pp_tardif_mere > [x] Si oui, laquelle = DIU",checkbox,NON_COCHÉ,,,,
+7,1,7,"pp_tardif_mere > [x] Si oui, laquelle = pilule",checkbox,COCHÉ,0.2294,0.7601,0.2496,0.7744
+7,1,7,pp_tardif_mere > [x] claires,checkbox,COCHÉ,0.2679,0.2426,0.2881,0.2569
+7,1,7,pp_tardif_mere > pilule,text,,,,,
+8,1,8,pp_tardif_nouveau_ne > Age,text,43 jours,0.119,0.1257,0.1708,0.1401
+8,1,8,pp_tardif_nouveau_ne > Autres à préciser #1,text,Néant,0.2019,0.3279,0.2384,0.3411
+8,1,8,pp_tardif_nouveau_ne > Autres à préciser #2,text,RAS,0.224,0.4504,0.2495,0.463
+8,1,8,pp_tardif_nouveau_ne > Date de la consultation,text,18/03/2026,0.7168,0.0863,0.7956,0.1012
+8,1,8,pp_tardif_nouveau_ne > Décision prise,text,Poursuivre,0.1803,0.7244,0.245,0.7395
+8,1,8,pp_tardif_nouveau_ne > Décision prise / Infection,text,l'allaitement exclusif,0.2487,0.7247,0.3725,0.7402
+8,1,8,pp_tardif_nouveau_ne > Poids,text,5218 g,0.6897,0.1289,0.7344,0.1434
+8,1,8,pp_tardif_nouveau_ne > Périmètre crânien,text,37 cm,0.4427,0.1537,0.4814,0.168
+8,1,8,pp_tardif_nouveau_ne > Revenir pour une visite de suivi nécessaire le,text,17/05/2026,0.3558,0.9039,0.4355,0.9186
+8,1,8,pp_tardif_nouveau_ne > Taille,text,58 cm,0.1265,0.1516,0.1656,0.1665
+8,1,8,pp_tardif_nouveau_ne > Température,text,36.8 °C,0.4135,0.1275,0.4613,0.1419
+8,1,8,pp_tardif_nouveau_ne > Traitement prescrit,text,Néant,0.2074,0.7606,0.2477,0.7753
+8,1,8,pp_tardif_nouveau_ne > Vu par,text,Inf. Zahra,0.1359,0.6886,0.2066,0.7039
+8,1,8,pp_tardif_nouveau_ne > [x] Allaitement = exclusivement au sein,checkbox,NON_COCHÉ,,,,
+8,1,8,pp_tardif_nouveau_ne > [x] Allaitement = mixte,checkbox,COCHÉ,0.5555,0.2053,0.5756,0.2196
+8,1,8,pp_tardif_nouveau_ne > [x] Evaluation de l'allaitement maternel = Normal,checkbox,COCHÉ,0.4167,0.4777,0.4369,0.492
+8,1,8,pp_tardif_nouveau_ne > [x] Nouveau-né prématuré,checkbox,NON_COCHÉ,,,,
+9,2,1,couverture > Nom de l'établissement sanitaire,text,CSC Hay Salam,0.3018,0.2055,0.3951,0.2191
+9,2,1,couverture > N° de la fiche,text,2026-416-002,0.1888,0.1215,0.2663,0.1352
+9,2,1,couverture > Province,text,Meknès,0.6141,0.1653,0.6627,0.1792
+9,2,1,couverture > Région,text,Fès-Meknès,0.151,0.1629,0.2264,0.1767
+9,2,1,couverture > [x] Anémie,checkbox,NON_COCHÉ,,,,
+9,2,1,couverture > [x] Fixe,checkbox,COCHÉ,0.1507,0.3786,0.1708,0.3928
+9,2,1,couverture > [x] Grossesse classée à risque,checkbox,COCHÉ,0.099,0.5185,0.1192,0.5327
+9,2,1,couverture > [x] H.T.A,checkbox,COCHÉ,0.1065,0.5954,0.1267,0.6097
+9,2,1,couverture > [x] Mobile,checkbox,NON_COCHÉ,,,,
+9,2,1,couverture > [x] Pré-éclampsie,checkbox,NON_COCHÉ,,,,
+10,2,2,identification_antecedents > Accouchement prématuré,text,,,,,
+10,2,2,identification_antecedents > Accouchement prématuré / Age gestationnel (SA),text,,,,,
+10,2,2,identification_antecedents > Accouchement prématuré / Date,text,,,,,
+10,2,2,identification_antecedents > Accouchement prématuré / Lieu,text,,,,,
+10,2,2,identification_antecedents > Age,text,21,0.1212,0.1024,0.1313,0.1131
+10,2,2,identification_antecedents > Allergie(s) / Famille de la femme,text,RAS,0.2255,0.3851,0.245,0.3955
+10,2,2,identification_antecedents > Allergie(s) / Mari/famille,text,RAS,0.3598,0.385,0.3795,0.395
+10,2,2,identification_antecedents > Avortement / Age gestationnel (SA),text,,,,,
+10,2,2,identification_antecedents > Avortement / Date,text,,,,,
+10,2,2,identification_antecedents > Avortement / Lieu,text,,,,,
+10,2,2,identification_antecedents > Avortement / Nombre,text,,,,,
+10,2,2,identification_antecedents > Compl. nouveau-né (type),text,RAS,0.2604,0.7987,0.2793,0.8082
+10,2,2,identification_antecedents > Compl. nouveau-né (type) / Accouch. 2,text,RAS,0.3961,0.7982,0.4154,0.808
+10,2,2,identification_antecedents > Compl. nouveau-né (type) / Accouch. 3,text,RAS,0.5324,0.7967,0.5512,0.807
+10,2,2,identification_antecedents > Compl. nouveau-né (type) / Accouch. 4,text,,,,,
+10,2,2,identification_antecedents > Complication (type) / Accouch. 1,text,RAS,0.2596,0.7325,0.2783,0.742
+10,2,2,identification_antecedents > Complication (type) / Accouch. 2,text,RAS,0.3956,0.7309,0.4146,0.7416
+10,2,2,identification_antecedents > Complication (type) / Accouch. 3,text,RAS,0.5314,0.7307,0.5505,0.7408
+10,2,2,identification_antecedents > Complication (type) / Accouch. 4,text,,,,,
+10,2,2,identification_antecedents > Date #2 / Accouch. 1,text,21/03/2018,0.2585,0.6318,0.3011,0.6428
+10,2,2,identification_antecedents > Date #2 / Accouch. 2,text,28/07/2021,0.3945,0.6314,0.4427,0.6417
+10,2,2,identification_antecedents > Date #2 / Accouch. 3,text,03/09/2022,0.5305,0.6302,0.5833,0.6409
+10,2,2,identification_antecedents > Date #2 / Accouch. 4,text,,,,,
+10,2,2,identification_antecedents > Diabète / Famille de la femme,text,RAS,0.2247,0.3138,0.2444,0.3239
+10,2,2,identification_antecedents > Diabète / Mari/famille,text,RAS,0.3589,0.3131,0.379,0.3238
+10,2,2,identification_antecedents > Frottis cervical / IVA (moins de 3 ans),text,Normal,0.3169,0.9464,0.3516,0.9591
+10,2,2,identification_antecedents > Gestation,text,4,0.1499,0.8557,0.1598,0.8691
+10,2,2,identification_antecedents > HTA / Chirurgicaux,text,Aucun,0.6341,0.2876,0.6615,0.2983
+10,2,2,identification_antecedents > HTA / Famille de la femme,text,RAS,0.2244,0.29,0.2439,0.3001
+10,2,2,identification_antecedents > HTA / Gynécologiques,text,Cycles réguliers,0.7688,0.2867,0.8438,0.2978
+10,2,2,identification_antecedents > HTA / Mari/famille,text,RAS,0.3588,0.289,0.3789,0.2997
+10,2,2,identification_antecedents > HTA / Médicaux,text,RAS,0.5251,0.2885,0.544,0.2983
+10,2,2,identification_antecedents > Le #1,text,12/05/2022,0.5373,0.9048,0.5969,0.9173
+10,2,2,identification_antecedents > Le #2,text,03/09/2021,0.5375,0.9242,0.5927,0.9363
+10,2,2,identification_antecedents > Maladies héréditaires,text,Oncle,0.2249,0.3378,0.2506,0.3483
+10,2,2,identification_antecedents > Maladies héréditaires / Mari/famille,text,RAS,0.3591,0.3365,0.3797,0.3474
+10,2,2,identification_antecedents > Malformations / Famille de la femme,text,RAS,0.2247,0.3608,0.2455,0.3719
+10,2,2,identification_antecedents > Malformations / Mari/famille,text,RAS,0.3592,0.3599,0.3799,0.3714
+10,2,2,identification_antecedents > Modalité d'extraction / Accouch. 1,text,Voie basse,0.2588,0.6652,0.3085,0.6758
+10,2,2,identification_antecedents > Modalité d'extraction / Accouch. 2,text,Voie basse,0.3948,0.6644,0.4446,0.6754
+10,2,2,identification_antecedents > Modalité d'extraction / Accouch. 3,text,Voie basse,0.5309,0.6633,0.5805,0.6741
+10,2,2,identification_antecedents > Modalité d'extraction / Accouch. 4,text,,,,,
+10,2,2,identification_antecedents > Niveau d'instruction,text,Aucun,0.2146,0.1276,0.2463,0.1399
+10,2,2,identification_antecedents > Nombre d'enfants vivants,text,3,0.6468,0.8537,0.6552,0.8662
+10,2,2,identification_antecedents > Parité,text,3,0.3292,0.8546,0.3373,0.867
+10,2,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 1,text,3626 g,0.2599,0.7654,0.2944,0.7757
+10,2,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 2,text,3679 g,0.3956,0.7639,0.4309,0.7751
+10,2,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 3,text,3001 g,0.5321,0.7634,0.5591,0.7741
+10,2,2,identification_antecedents > Poids nouveau-né(s) / Accouch. 4,text,,,,,
+10,2,2,identification_antecedents > Profession #1,text,Agricultrice,0.5846,0.1253,0.6446,0.1378
+10,2,2,identification_antecedents > Profession #2,text,Chauffeur,0.5848,0.1778,0.6407,0.1902
+10,2,2,identification_antecedents > Si césarienne : indication,text,,,,,
+10,2,2,identification_antecedents > [x] Consanguinité,checkbox,NON_COCHÉ,,,,
+10,2,2,identification_antecedents > [x] Grossesse désirée,checkbox,COCHÉ,0.4989,0.2038,0.519,0.218
+10,2,2,identification_antecedents > [x] VAT = 1,checkbox,NON_COCHÉ,,,,
+10,2,2,identification_antecedents > [x] VAT = 2,checkbox,COCHÉ,0.1954,0.8784,0.2156,0.8927
+10,2,2,identification_antecedents > [x] VAT = 3,checkbox,NON_COCHÉ,,,,
+10,2,2,identification_antecedents > [x] VAT = 4,checkbox,NON_COCHÉ,,,,
+10,2,2,identification_antecedents > [x] VAT = 5,checkbox,NON_COCHÉ,,,,
+10,2,2,identification_antecedents > [x] Vaccinée contre l'hépatite B,checkbox,COCHÉ,0.0701,0.9222,0.0903,0.9364
+10,2,2,identification_antecedents > [x] Vaccinée contre la rubéole,checkbox,COCHÉ,0.07,0.902,0.0902,0.9163
+11,2,3,grossesse_actuelle > Ag HBs / 1er trimestre / Visite 1,text,Neg,0.2573,0.6799,0.2765,0.6903
+11,2,3,grossesse_actuelle > Ag HBs / 1er trimestre / Visite 2,text,,,,,
+11,2,3,grossesse_actuelle > Ag HBs / 2ème trimestre / Visite 1,text,,,,,
+11,2,3,grossesse_actuelle > Ag HBs / 2ème trimestre / Visite 2,text,,,,,
+11,2,3,grossesse_actuelle > Age probable / 1er trimestre / Visite 1,text,8 SA,0.2599,0.236,0.2825,0.2457
+11,2,3,grossesse_actuelle > Age probable / 1er trimestre / Visite 2,text,12 SA,0.3352,0.2361,0.3616,0.2458
+11,2,3,grossesse_actuelle > Age probable / 2ème trimestre / Visite 1,text,19 SA,0.4859,0.2365,0.5121,0.2469
+11,2,3,grossesse_actuelle > Age probable / 2ème trimestre / Visite 2,text,24 SA,0.5611,0.2366,0.5928,0.2469
+11,2,3,grossesse_actuelle > Age probable / 2ème trimestre / Visite 3,text,28 SA,0.6365,0.2368,0.6657,0.2471
+11,2,3,grossesse_actuelle > Age probable / 3ème trimestre / 7ème mois,text,31 SA,0.7119,0.2367,0.7373,0.2465
+11,2,3,grossesse_actuelle > Age probable / 3ème trimestre / 8ème mois,text,35 SA,0.787,0.2372,0.8168,0.2477
+11,2,3,grossesse_actuelle > Age probable / 3ème trimestre / 9ème mois,text,,,,,
+11,2,3,grossesse_actuelle > Albuminurie / 1er trimestre / Visite 1,text,Neg,0.2578,0.5952,0.2765,0.6054
+11,2,3,grossesse_actuelle > Albuminurie / 1er trimestre / Visite 2,text,Neg,0.333,0.5953,0.3522,0.6058
+11,2,3,grossesse_actuelle > Albuminurie / 2ème trimestre / Visite 1,text,Neg,0.4837,0.5956,0.5027,0.6066
+11,2,3,grossesse_actuelle > Albuminurie / 2ème trimestre / Visite 2,text,Neg,0.5592,0.5965,0.5781,0.6067
+11,2,3,grossesse_actuelle > Albuminurie / 2ème trimestre / Visite 3,text,Neg,0.6344,0.5969,0.6533,0.6064
+11,2,3,grossesse_actuelle > Albuminurie / 3ème trimestre / 7ème mois,text,Neg,0.7094,0.596,0.7283,0.6066
+11,2,3,grossesse_actuelle > Albuminurie / 3ème trimestre / 8ème mois,text,Neg,0.7849,0.5968,0.8038,0.607
+11,2,3,grossesse_actuelle > Albuminurie / 3ème trimestre / 9ème mois,text,,,,,
+11,2,3,grossesse_actuelle > Anomalies squelette / 1er trimestre / Visite 1,text,RAS,0.2597,0.3208,0.2782,0.3305
+11,2,3,grossesse_actuelle > Anomalies squelette / 1er trimestre / Visite 2,text,RAS,0.3349,0.3207,0.3536,0.3308
+11,2,3,grossesse_actuelle > Anomalies squelette / 2ème trimestre / Visite 1,text,RAS,0.4855,0.321,0.5044,0.331
+11,2,3,grossesse_actuelle > Anomalies squelette / 2ème trimestre / Visite 2,text,RAS,0.5606,0.3215,0.5797,0.3315
+11,2,3,grossesse_actuelle > Anomalies squelette / 2ème trimestre / Visite 3,text,RAS,0.6359,0.3221,0.6552,0.3318
+11,2,3,grossesse_actuelle > Anomalies squelette / 3ème trimestre / 7ème mois,text,RAS,0.7113,0.3215,0.7296,0.3319
+11,2,3,grossesse_actuelle > Anomalies squelette / 3ème trimestre / 8ème mois,text,RAS,0.7865,0.3231,0.805,0.3322
+11,2,3,grossesse_actuelle > Anomalies squelette / 3ème trimestre / 9ème mois,text,,,,,
+11,2,3,grossesse_actuelle > BCF / 1er trimestre / Visite 1,text,—,0.259,0.4469,0.2664,0.4564
+11,2,3,grossesse_actuelle > BCF / 1er trimestre / Visite 2,text,—,0.3342,0.4478,0.3416,0.4572
+11,2,3,grossesse_actuelle > BCF / 2ème trimestre / Visite 1,text,129,0.4847,0.4478,0.4996,0.4577
+11,2,3,grossesse_actuelle > BCF / 2ème trimestre / Visite 2,text,152,0.56,0.4481,0.5739,0.4585
+11,2,3,grossesse_actuelle > BCF / 2ème trimestre / Visite 3,text,129,0.6352,0.4481,0.6499,0.4583
+11,2,3,grossesse_actuelle > BCF / 3ème trimestre / 7ème mois,text,130,0.7104,0.4489,0.7224,0.4587
+11,2,3,grossesse_actuelle > BCF / 3ème trimestre / 8ème mois,text,132,0.7858,0.4494,0.8003,0.4593
+11,2,3,grossesse_actuelle > BCF / 3ème trimestre / 9ème mois,text,,,,,
+11,2,3,grossesse_actuelle > Bilan glycémique / 1er trimestre / Visite 1,text,0.8 g/L,0.2567,0.7641,0.2898,0.7743
+11,2,3,grossesse_actuelle > Bilan glycémique / 1er trimestre / Visite 2,text,,,,,
+11,2,3,grossesse_actuelle > Bilan glycémique / 2ème trimestre / Visite 1,text,,,,,
+11,2,3,grossesse_actuelle > Bilan glycémique / 2ème trimestre / Visite 2,text,,,,,
+11,2,3,grossesse_actuelle > DATE DE DÉPASSEMENT DE TERME,text,25/05/2026,0.7134,0.1059,0.7827,0.1195
+11,2,3,grossesse_actuelle > DATE PRÉVUE D'ACCOUCHEMENT,text,18/05/2026,0.3162,0.1046,0.3759,0.1182
+11,2,3,grossesse_actuelle > DDR,text,11/08/2025,0.1199,0.0838,0.1757,0.0977
+11,2,3,grossesse_actuelle > Examen au spéculum / 1er trimestre / Visite 1,text,RAS,0.2587,0.4683,0.2777,0.4786
+11,2,3,grossesse_actuelle > Examen au spéculum / 1er trimestre / Visite 2,text,—,0.3338,0.4693,0.3415,0.4787
+11,2,3,grossesse_actuelle > Examen au spéculum / 2ème trimestre / Visite 1,text,—,0.4846,0.4686,0.492,0.4779
+11,2,3,grossesse_actuelle > Examen au spéculum / 2ème trimestre / Visite 2,text,—,0.5599,0.469,0.5673,0.4783
+11,2,3,grossesse_actuelle > Examen au spéculum / 2ème trimestre / Visite 3,text,—,0.635,0.4702,0.6424,0.4795
+11,2,3,grossesse_actuelle > Examen au spéculum / 3ème trimestre / 7ème mois,text,—,0.7103,0.4706,0.7178,0.4799
+11,2,3,grossesse_actuelle > Examen au spéculum / 3ème trimestre / 8ème mois,text,—,0.7855,0.4708,0.7928,0.4798
+11,2,3,grossesse_actuelle > Examen au spéculum / 3ème trimestre / 9ème mois,text,,,,,
+11,2,3,grossesse_actuelle > Examen des seins / 1er trimestre / Visite 1,text,Normaux,0.2593,0.3625,0.2983,0.373
+11,2,3,grossesse_actuelle > Examen des seins / 1er trimestre / Visite 2,text,Normaux,0.3347,0.3625,0.374,0.373
+11,2,3,grossesse_actuelle > Examen des seins / 2ème trimestre / Visite 1,text,Normaux,0.4852,0.3632,0.5245,0.3737
+11,2,3,grossesse_actuelle > Examen des seins / 2ème trimestre / Visite 2,text,Normaux,0.5605,0.3633,0.5995,0.374
+11,2,3,grossesse_actuelle > Examen des seins / 2ème trimestre / Visite 3,text,Normaux,0.6357,0.3635,0.6747,0.3745
+11,2,3,grossesse_actuelle > Examen des seins / 3ème trimestre / 7ème mois,text,Normaux,0.7109,0.3638,0.7495,0.3743
+11,2,3,grossesse_actuelle > Examen des seins / 3ème trimestre / 8ème mois,text,Normaux,0.7862,0.3643,0.8252,0.3747
+11,2,3,grossesse_actuelle > Examen des seins / 3ème trimestre / 9ème mois,text,,,,,
+11,2,3,grossesse_actuelle > Examen fait par / 1er trimestre / Visite 1,text,Sage-femme,0.2563,0.8704,0.3165,0.8806
+11,2,3,grossesse_actuelle > Examen fait par / 1er trimestre / Visite 2,text,Sage-femme,0.3317,0.87,0.3923,0.8805
+11,2,3,grossesse_actuelle > Examen fait par / 2ème trimestre / Visite 1,text,Dr Benjelloun,0.4819,0.8707,0.5456,0.8811
+11,2,3,grossesse_actuelle > Examen fait par / 2ème trimestre / Visite 2,text,Inf. Zahra,0.5574,0.8708,0.6071,0.8816
+11,2,3,grossesse_actuelle > Examen fait par / 2ème trimestre / Visite 3,text,Inf. Zahra,0.6327,0.8711,0.6826,0.8817
+11,2,3,grossesse_actuelle > Examen fait par / 3ème trimestre / 7ème mois,text,Dr Benjelloun,0.708,0.8713,0.7713,0.8821
+11,2,3,grossesse_actuelle > Examen fait par / 3ème trimestre / 8ème mois,text,Dr Benjelloun,0.7832,0.8714,0.8461,0.8822
+11,2,3,grossesse_actuelle > Examen fait par / 3ème trimestre / 9ème mois,text,,,,,
+11,2,3,grossesse_actuelle > Fer / 1er trimestre / Visite 1,text,Oui,0.2566,0.8278,0.2686,0.8381
+11,2,3,grossesse_actuelle > Fer / 1er trimestre / Visite 2,text,,,,,... (317 KB left)
