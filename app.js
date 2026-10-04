@@ -1,9 +1,10 @@
 const chat = document.getElementById("chat");
 const cameraInput = document.getElementById("cameraInput");
+const galleryInput = document.getElementById("galleryInput");
 const networkBtn = document.getElementById("networkBtn");
 
 let online = true;
-let currentImage = null;
+let currentImages = [];
 let currentExtraction = null;
 
 
@@ -23,20 +24,23 @@ function addMessage(html, type = "bot") {
 
 
 function addActions(buttons) {
-  const actions = document.createElement("div");
-  actions.className = "actions";
+    const container = document.createElement("div");
+    container.className = "actions";
 
-  buttons.forEach(button => {
-    const btn = document.createElement("button");
+    buttons.forEach(button => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = button.text || button.label;
 
-    btn.innerHTML = button.label;
-    btn.onclick = button.action;
+        btn.addEventListener("click", () => {
+            button.action();
+        });
 
-    actions.appendChild(btn);
-  });
+        container.appendChild(btn);
+    });
 
-  chat.appendChild(actions);
-  chat.scrollTop = chat.scrollHeight;
+    chat.appendChild(container);
+    chat.scrollTop = chat.scrollHeight;
 }
 
 
@@ -45,111 +49,215 @@ function addActions(buttons) {
 // ============================================================
 
 function startVisit() {
-  addMessage("📷 Nouvelle visite", "user");
+    currentImages = [];
+    currentExtraction = null;
 
-  addMessage(`
-    Photographiez la page du carnet de grossesse.<br><br>
+    addMessage(
+        `📄 <strong>Nouvelle visite</strong><br><br>
+        Ajoutez la première page du carnet de la patiente.`
+    );
 
-    ✓ Toute la page doit être visible<br>
-    ✓ Évitez les ombres<br>
-    ✓ Assurez-vous que l'image est nette
-  `);
-
-  addActions([
-    {
-      label: "📷 Prendre une photo",
-      action: () => cameraInput.click()
-    },
-    {
-      label: "🖼️ Choisir une photo",
-      action: () => cameraInput.click()
-    }
-  ]);
+    showImageOptions();
 }
 
+function showImageOptions() {
+    addMessage("Comment souhaitez-vous ajouter cette page ?");
+
+    addActions([
+        {
+            text: "📷 Prendre une photo",
+            action: () => cameraInput.click()
+        },
+        {
+            text: "🖼️ Choisir une image",
+            action: () => galleryInput.click()
+        }
+    ]);
+}
 
 // ============================================================
-// RECEIVE PHOTO
+// RECEIVE PHOTOS
 // ============================================================
 
-cameraInput.addEventListener("change", function (event) {
-  const file = event.target.files[0];
+// Camera: one photo at a time
+cameraInput.addEventListener("change", () => {
+    const file = cameraInput.files[0];
 
-  if (!file) return;
+    if (!file) return;
 
-  currentImage = file;
+    currentImages.push(file);
 
-  const imageURL = URL.createObjectURL(file);
+    const pageNumber = currentImages.length;
+    const imageURL = URL.createObjectURL(file);
 
-  addMessage(`
-    <img class="preview" src="${imageURL}">
-  `, "user");
+    addMessage(
+        `<img class="preview" src="${imageURL}">
+        <br><strong>Page ${pageNumber} ajoutée ✓</strong>`,
+        "user"
+    );
 
-  addMessage("🔍 Vérification de l'image...");
+    cameraInput.value = "";
 
-  if (online) {
-    processImage();
-  } else {
-    addMessage(`
-      📴 Vous êtes hors ligne.<br><br>
-
-      La photo est conservée sur cet appareil.<br><br>
-
-      🟠 <strong>PENDING_AI</strong><br>
-      Traitement dès le retour de la connexion.
-    `, "system");
-  }
+    askForAnotherPage();
 });
 
 
+// Gallery: one OR multiple images at once
+galleryInput.addEventListener("change", () => {
+    const files = Array.from(galleryInput.files);
+
+    if (files.length === 0) return;
+
+    files.forEach(file => {
+        currentImages.push(file);
+
+        const pageNumber = currentImages.length;
+        const imageURL = URL.createObjectURL(file);
+
+        addMessage(
+            `<img class="preview" src="${imageURL}">
+            <br><strong>Page ${pageNumber} ajoutée ✓</strong>`,
+            "user"
+        );
+    });
+
+    galleryInput.value = "";
+
+    addMessage(
+        `📄 <strong>${files.length} image(s) ajoutée(s).</strong><br>
+        Total du dossier : ${currentImages.length} page(s).`
+    );
+
+    askForAnotherPage();
+});
 // ============================================================
 // REAL AI EXTRACTION
 // ============================================================
 
-async function processImage() {
-  if (!currentImage) {
-    addMessage("❌ Aucune image sélectionnée.", "system");
-    return;
-  }
-
-  addMessage(`
-    🤖 Analyse du registre en cours...
-  `);
-
-  try {
-    const formData = new FormData();
-
-    formData.append("image", currentImage);
-
-    // TEMPORARY:
-    // We use page type 4 for our first end-to-end test.
-    formData.append("page_type", "4");
-
-    const response = await fetch("/api/extract", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      throw new Error(
-        data.error || "Erreur pendant l'extraction."
-      );
+async function processImages() {
+    if (currentImages.length === 0) {
+        addMessage("Aucune page à analyser.", "system");
+        return;
     }
 
-    currentExtraction = data;
+    addMessage(
+        `🤖 <strong>Analyse de ${currentImages.length} page(s) en cours...</strong><br>
+        Cela peut prendre quelques secondes.`,
+        "system"
+    );
 
-    showResults(data);
+    const results = [];
 
-  } catch (error) {
-    console.error(error);
+    for (let i = 0; i < currentImages.length; i++) {
 
-    addMessage(`
-      ❌ <strong>Erreur pendant l'analyse.</strong><br><br>
-      ${error.message}
-    `, "system");
-  }
+        addMessage(
+            `🔍 Analyse de la page ${i + 1}/${currentImages.length}...`,
+            "system"
+        );
+
+        const formData = new FormData();
+
+        formData.append("image", currentImages[i]);
+
+        // TEMPORARY:
+        // We will replace this with proper page identification next.
+        formData.append("page_type", String(i + 1));
+
+        try {
+            const response = await fetch("/api/extract", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(
+                    data.error || `Erreur lors de l'analyse de la page ${i + 1}`
+                );
+            }
+
+            results.push({
+                pageNumber: i + 1,
+                extraction: data
+            });
+
+            addMessage(
+                `✅ Page ${i + 1} analysée.`,
+                "system"
+            );
+
+        } catch (error) {
+            console.error(error);
+
+            addMessage(
+                `❌ <strong>Erreur page ${i + 1}</strong><br>${error.message}`,
+                "system"
+            );
+        }
+    }
+
+    currentExtraction = results;
+
+    showMultipleResults(results);
+}
+
+function showMultipleResults(results) {
+
+    if (results.length === 0) {
+        addMessage(
+            "❌ Aucune page n'a pu être analysée.",
+            "system"
+        );
+        return;
+    }
+
+    addMessage(
+        `📋 <strong>Analyse terminée</strong><br><br>
+        ${results.length} page(s) traitée(s).`
+    );
+
+    results.forEach(result => {
+
+        const data = result.extraction;
+
+        let html =
+            `<strong>📄 Page ${result.pageNumber}</strong><br>
+             Statut : <strong>${data.status || "AI_PROCESSED"}</strong><br><br>`;
+
+        if (data.fields && data.fields.length > 0) {
+
+            data.fields.forEach(field => {
+
+                let value = field.value;
+
+                if (
+                    value === null ||
+                    value === undefined ||
+                    value === ""
+                ) {
+                    value = "—";
+                }
+
+                html +=
+                    `<strong>${field.label || field.name}</strong>: ${value}<br>
+                     <small>
+                     ${field.status} · confiance ${
+                         Math.round((field.confidence || 0) * 100)
+                     }%
+                     </small><br><br>`;
+            });
+
+        } else {
+            html += "Aucun champ extrait.";
+        }
+
+        addMessage(html);
+    });
+
+    addMessage(
+        `👩‍⚕️ Vérifiez les champs marqués <strong>NEEDS_REVIEW</strong> ou <strong>ILLEGIBLE</strong>.`
+    );
 }
 
 
@@ -421,7 +529,7 @@ networkBtn.addEventListener("click", function () {
       Synchronisation en cours...
     `, "system");
 
-    if (currentImage) {
+    if (currentImage.length > 0) {
       setTimeout(processImage, 800);
     }
 

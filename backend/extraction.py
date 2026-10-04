@@ -23,6 +23,7 @@ SEUIL_CONNU = 0.85
 SEUIL_ENCRE = 0.03
 SEUIL_CASE = 0.24
 
+
 # EasyOCR replaces pytesseract.
 # First run may download the OCR models.
 reader = easyocr.Reader(["fr", "en"], gpu=False)
